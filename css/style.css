@@ -1,0 +1,599 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Luxurious+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Luxurious+Script&family=Marko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Luxurious+Roman&family=Luxurious+Script&family=Marko+One&display=swap');
+/*
+font-family: "Luxurious Roman", serif;
+font-family: "Luxurious Script", cursive;
+font-family: "Marko One", serif;
+font-family: "Dancing Script", cursive;
+*/
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Dancing Script", cursive;
+}
+
+h1 {
+  font-family: "Luxurious Script", cursive;
+  font-size: 3.125rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #FFF8E3;
+  width: 100%;
+  height: 6.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6.25rem;
+  align-items: center;
+}
+
+
+.barra nav{ 
+width: 100%;
+height: 4.375rem;
+font-size: 2.5rem;
+text-decoration: none;
+  background-color: #F3D7CA;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+ul.navBar {
+  height: 4.375rem;
+}
+
+.navBar {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.navBar li a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px black;
+}
+
+.barra nav a {
+  text-shadow: 2px 2px 4px black;
+  text-decoration: none;
+  font-size: 1.875rem;
+}
+
+.seccionUno {
+  width: 100%;
+  height: 31.25rem;
+  background-image: url("../assets/iconos/1500px.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box {
+  width:40%;
+  height: 18.75rem;
+  font-size: .625rem;
+  background-color: #f3d7caab;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box p {
+
+  width: 100%;
+  height: 12.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1%;
+  
+}
+.seccionDos {
+  width: 100%;
+  height: 400px;
+  padding: 5%
+
+}
+.seccionDos p {
+  width: 100%;
+height: 18.75rem;
+font-size: 1.875rem;
+text-align: center;
+}
+
+.seccionTres div a img{
+  width:100%;
+  height:300px;
+  border: solid black;
+border-radius: 45% 45% 0% 0%;
+}
+
+.seccionTres div a p {
+  height: 50%;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.seccionTres{ 
+  width: 100%;
+  height: 31.25rem;
+  background-color: #F3D7CA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.seccionTres div {
+  background-color: #E7C0AE;
+  border-radius: 100% 100% 0% 0%;
+  width: 15%;
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.seccionTres div a {
+  text-decoration: none;
+}
+.seccionTres div a p {
+  color: black;
+  font-size: 2.5rem;
+  text-align: center;
+
+}
+
+.seccionNos {
+  background-image: url("../assets/iconos/istockphoto-929904308-170667a\ 2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 46.9375rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.seccionNos div {
+  width: 50%;
+  height: 37.5rem;
+  background-color:#f3d7ca94 ;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+
+}
+.galeriaMain {
+  width: 100%;
+  height: 62.5rem;
+  background-image: url("../assets/iconos/fondo\ pagina\ galeria.png");
+}
+
+
+.seccionCuatro {
+  width: 100vw;
+  height: 28.125rem;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12,1fr);
+}
+.seccionCuatro .anillos img {
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  border-radius: 0% 0% 40% 40%;
+}
+
+.anillos {
+  grid-column: 8/11;
+  grid-row: 1/12;
+  order: 2;
+}
+
+
+
+.expNov {
+  width: 100%;
+  height: 100%;
+  background-color: #E7C0AE;
+  font-size: 1.25rem;
+  padding: 2%;
+  grid-column: 1/13;
+  grid-row: 6/13;
+  order: 1;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(5,1fr);
+}
+
+.expNov h2{
+  width: 100%;
+  height: 100%;
+  grid-column: 2/6;
+  grid-row: 2/3;
+}
+
+.expNov p {
+  width:100%;
+  height: 100%;
+  grid-column: 1/6;
+  grid-row: 3/6;
+}
+
+.bodaSecUno {
+  width: 100%;
+  height: 25rem;
+  background-color: #E7C0AE;
+  font-size: 1.875rem;
+  text-align: center;
+  padding: 5%;
+}
+.bodaSecDos {
+  width: 100%;
+  height: 31.25rem;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+.bodaSecDos div img {
+  width: 100%;
+  height: 100%;
+  border:  solid black;
+  border-radius: 0% 0% 45% 45%;
+}
+
+.bodaSecDos div {
+  grid-column:2/5 ;
+  grid-row: 1/5;
+  order: 2;
+}
+.bodaSecDos article {
+  width: 100%;
+  height: 100%;
+  background-color: #f1e8cd;
+  grid-column:1/10;
+  grid-row:2/5 ;
+  order: 1;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+.bodaSecDos article p {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5625rem;
+  text-align: center;
+  grid-column:6/9 ;
+  grid-row:3/5 ;
+}
+
+.bodaSecDos article h2 {
+  width: 100%;
+  height: 100%;
+  font-size: 2.1875rem ;
+  padding: 5%;
+  grid-column: 7/9;
+  grid-row:1/2 ;
+}
+
+.bodaSecTres {
+  width: 100%;
+  height: 31.25rem;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+.bodaSecTres div img {
+  width: 100%;
+  height: 100%;
+  border:  solid black;
+  border-radius: 0% 0% 45% 45%;
+}
+
+.bodaSecTres div {
+  grid-column:6/9 ;
+  grid-row: 1/5;
+  order: 2;
+}
+.bodaSecTres article {
+  width: 100%;
+  height: 100%;
+  background-color: #F3D7CA;
+  grid-column:1/10;
+  grid-row:2/5 ;
+  order: 1;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+.bodaSecTres article p {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5625rem;
+  text-align: center;
+  grid-column:2/5 ;
+  grid-row:3/6 ;
+}
+
+.bodaSecTres article h2 {
+  width: 100%;
+  height: 100%;
+  font-size: 2.1875rem ;
+  padding-top: 5%;
+  grid-column: 3/5;
+  grid-row:1/2 ;
+}
+.bodaSecCuatro {
+  width: 100%;
+  height: 31.25rem;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+.bodaSecCuatro div img {
+  width: 100%;
+  height: 100%;
+  border:  solid black;
+  border-radius: 0% 0% 45% 45%;
+}
+
+.bodaSecCuatro div {
+  grid-column:2/5 ;
+  grid-row: 1/5;
+  order: 2;
+}
+.bodaSecCuatro article {
+  width: 100%;
+  height: 100%;
+  background-color: #fdf9ec;
+  grid-column:1/10;
+  grid-row:2/5 ;
+  order: 1;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+.bodaSecCuatro article p {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5625rem;
+  text-align: center;
+  grid-column:6/9 ;
+  grid-row:3/5 ;
+}
+
+.bodaSecCuatro article h2 {
+  width: 100%;
+  height: 100%;
+  font-size: 2.1875rem ;
+  padding: 5%;
+  grid-column: 7/9;
+  grid-row:1/2 ;
+}
+
+.carrusel{
+  width: 40%;
+  height: 37.5rem;
+  background-color: rgba(128, 128, 128, 0.696);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrusel div{
+width: 65%;
+height: 31.25rem;
+
+}
+.carrusel div img{
+  width: 100%;
+  height: 100%;
+}
+
+.galeriaMain div {
+  width: 40%;
+  height: 37.5rem;
+}
+.galeriaMain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+
+@media (max-width: 1024px) {
+  
+  .navBar li a {
+font-size: 1.25rem;
+  }
+
+  .navBar {
+    width: 100%;
+    height: 4.375rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5%;
+    
+  }
+.barra nav a {
+  padding-left: 5%;
+}
+
+.seccionUno .box p {
+  font-size: 1.25rem;
+  padding: 1%;
+}
+  .seccionDos p{
+    font-size: 1.5625rem;
+    }
+  .seccionTres div img{
+    width: 200px;
+    height: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionTres div{
+    width: 100%;
+    height: 25rem;
+  }
+
+  .expNov p{
+    font-size: .9375rem;
+  }
+  .expNov h2{
+    font-size: 1.25rem;
+  }
+}
+
+@media ( max-width: 768px){
+  nav {
+    width: 100%;
+    height: 4.375rem;
+    background-color: #F3D7CA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+  }
+  .navBar li a {
+    font-size: 15px;
+  }
+  ul .navBar {
+    width: 100%;
+    height: 4.375rem;
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .seccionUno {
+    width: 100%;
+    height: 21.875rem;
+  }
+
+  .seccionUno .box{
+    height: 9.375rem;
+  }
+
+  .seccionUno .box p{
+    height: 6.25rem;
+  font-size: .625rem;
+  text-align: center;
+  
+  }
+  .seccionTres {
+    width: 100%;
+    height: 18.75rem;
+  }
+  
+  .seccionTres div a img{
+    width:100%;
+    height: 9.375rem;
+    border: solid black;
+  border-radius: 45% 45% 0% 0%;
+}
+
+.seccionTres div{
+  width:25%;
+  height: 12.5rem;
+
+}
+.seccionTres div a p {
+  height:3.125rem;
+  font-size: .9375rem;
+}
+.seccionCuatro{
+  width: 100%;
+  height: 18.75rem;
+
+}
+
+.anillos {
+  height: 12.5rem1;
+  grid-column: 8/12;
+  grid-row: 1/10;
+}
+
+.expNov {
+height: 12.5rem;
+}
+.expNov p {
+  font-size: .625rem;
+}
+.expNov h2{
+  font-size: .9375rem;
+  grid-column: 2/5;
+  grid-row: 1/3;
+}
+
+footer {
+  height: 3.125rem;
+  gap: 3.125rem;
+}
+footer a img {
+  width: 100%;
+  height: 1.25rem;
+}
+}
+@media(max-width: 20rem){
+  .navBar {
+    padding-right:0%;
+  
+  }
+
+  .seccionDos {
+    height: 15.625rem;
+  }
+  .seccionDos p{
+    font-size: 1rem;
+  }
+  .seccionDos h1 {
+    font-size: 1.875rem;
+  }
+  
+  .seccionTres{
+  height: 50rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seccionTres div a {
+    width: 100%;
+    height: 15.625rem;
+  }
+
+  .seccionTres div {
+    width: 50%;
+    height: 15.625rem;
+  }
+
+  .seccionTres div a img {
+    width:100%;
+    height: 12.5rem;
+  }
+
+}
