@@ -34,7 +34,9 @@ footer {
   gap: 6.25rem;
   align-items: center;
 }
-
+.font-open-sans {
+  font-family: "Luxurious Script", cursive;
+}
 
 .barra nav{ 
 width: 100%;
@@ -393,22 +395,19 @@ border-radius: 45% 45% 0% 0%;
 }
 
 .carrusel{
-  width: 40%;
+  width: 100%;
   height: 37.5rem;
   background-color: rgba(128, 128, 128, 0.696);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carrusel div{
-width: 65%;
-height: 31.25rem;
 
 }
-.carrusel div img{
-  width: 100%;
-  height: 100%;
+.carrusel div{
+width: 100%;
+height: 37.5rem;
+padding-top: 3.125rem;
+padding-bottom: 3.125rem;
+
 }
+
 
 .galeriaMain div {
   width: 40%;
@@ -418,6 +417,17 @@ height: 31.25rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.carrusel {
+  margin-right: 4.6875rem;
+  margin-left: 4.6875rem;
+  display: flex;
+  justify-content: center;
+}
+.carrusel img {
+  width: 80%;
+  height: 37.5rem;
+  padding: 3.125rem 0rem 3.125rem 0rem;
 }
 
 .textoMedio p {
@@ -430,6 +440,71 @@ height: 31.25rem;
 .textoMedio h1 {
   padding-top: 1.875rem;
 }
+.contacto {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+}
+.contacto div {
+  width: 50%;
+  height: 800px;
+}
+iframe {
+  width: 40%;
+  height: 40%;
+}
+.contactoPag {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactoPag div {
+  width: 50%;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: repeat(8.1fr);
+}
+.contactoPag div p:first-child {
+  grid-column:1/4 ;
+  grid-row: 2/3;
+}
+.contactoPag div a:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.contactoPag div a:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.contactoPag div a:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.contactoPag div a:last-child {
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
+.contactoPag div a img {
+  width: 10%;
+  padding-right: .0625rem;
+}
+
+
+.contactoPag div a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-family: "Dancing Script", cursive; ;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 /* aca termina la vista destop*/
 
 
@@ -591,6 +666,16 @@ font-size: 1.25rem;
   grid-row: 1/5;
   order: 2;
 }
+
+.galeriaMain div {
+  width:40%;
+}
+.carrusel {
+  margin-right: 0rem;
+  margin-left: 0rem;
+  display: flex;
+  justify-content: center;
+}
 }
 /*aca termina la otra vista*/
 
@@ -726,7 +811,25 @@ footer a img {
 .bodaSecCuatro div {
   grid-column: 2/6;
 }
+.galeriaMain {
+  width: 100%;
+  height: 62.5rem;
+  display: flex;
+  flex-direction: column;
+}
 
+.galeriaMain div {
+  width: 90%;
+  height: 25rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+}
+.carrusel img {
+  height: 100%;
+}
 }
 
 
@@ -742,11 +845,21 @@ footer a img {
   line-height: .9375rem;
   padding-top: .625rem;
 }
+.galeriaMain div {
+  font-size: .875rem;
+}
+.galeriaMain div h1 {
+  font-size: 1.5625rem;
+  margin-bottom: 1.25rem;
+}
 }
 /*aca termina otra vista*/
 
 
 @media (max-width: 375px) {
+  .navBar {
+    padding-right: .3125rem;
+  }
 
   .box p {
     height: 9.375rem;
@@ -764,6 +877,9 @@ footer a img {
     line-height: .9375rem;
     padding-top: .625rem;
   }
+  .galeriaMain div {
+    font-size: .75rem;
+  }
 }
 
 /*aca termina la otra vista */
@@ -771,7 +887,9 @@ footer a img {
 
 @media(max-width: 20rem){
   .navBar {
-    padding-right: .625rem;
+    padding-right: .125rem;
+    justify-content: center;
+    padding-left: 1.25rem;
   }
 .seccionNos {
   display: flex;
