@@ -34,6 +34,10 @@ footer {
   gap: 6.25rem;
   align-items: center;
 }
+footer a img:hover {
+  filter: grayscale(3) ;
+  width: 50%;
+}
 .font-open-sans {
   font-family: "Luxurious Script", cursive;
 }
@@ -65,6 +69,14 @@ ul.navBar {
   color: white;
   text-decoration: none;
   text-shadow: 2px 2px 4px black;
+}
+.navBar li a:hover {
+  font-size: 1.5625rem;
+  color:rgba(218, 29, 146, 0.847);
+}
+.barra nav a:hover {
+  font-size: 1.5625rem;
+  color:rgba(218, 29, 146, 0.847);
 }
 
 .barra nav a {
@@ -118,52 +130,110 @@ ul.navBar {
 .seccionDos p {
   width: 100%;
 height: 18.75rem;
-font-size: 1.875rem;
+font-size: 1.5625rem;
 text-align: center;
 }
-
-.model {
-  background-color: #E7C0AE;
-  border-radius: 100% 100% 0% 0%;
-  width: 20%;
-  height: 25rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: start;
+.seccionDos p::first-letter {
+  font-size: 2.5rem;
 }
-
-.model a img{
-  width:100%;
-  height:300px;
-  border: solid black;
-border-radius: 45% 45% 0% 0%;
-}
-
-.model a p {
-  height: 3.125rem;
-  color: black;
-  font-size: 1.5625rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-.model a {
-  width: 100%;
-  text-decoration: none;
-}
-
-
-.seccionTres{ 
+.seccionTres {
   width: 100%;
   height: 31.25rem;
   background-color: #F3D7CA;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: center;
   align-items: center;
 }
+
+.seccionTres div{
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+}
+.seccionTres div a {
+  text-decoration: none;
+}
+.seccionTres div img {
+  border-radius: 31.25rem 31.25rem 0% 0%;
+}
+.seccionTres div p {
+  background-color: #e7bda9;
+  width: 100%;
+  height: 6.25rem;
+  color: black;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.model:hover {
+filter:grayscale(3) ;
+  width: 80%;
+}
+
+/*html hecho con boostrap*/
+
+.font-open-sans {
+  background-image: url(../assets/iconos/pareja.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+  .fs-25 {
+font-size: 1.5625rem
+  }
+  .fs-40 {
+    font-size: 1.875rem;
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px black;
+  }
+  .fs-lux {
+    font-family: "Dancing Script", cursive;
+  }
+  .rounded-5 {
+      background-color:#f3d7ca ;
+      justify-content: e;
+  }
+  .bg-color {
+      background-color: #F3D7CA;
+  }
+  .no-bullets {
+      list-style: none;
+  }
+  .custom-height-70 {
+      height: 4.375rem;
+  }
+  .custom-height-700 {
+      height: 43.75rem;
+  }
+  .custom-height-500 {
+      height: 31.25rem;
+  }
+  .custom-gap-100 {
+      gap: 6.25rem;
+  }
+  .custom-height-100 {
+      height: 6.25rem;
+  }
+  .bg-cf {
+      background-color:#FFF8E3 ;
+  }
+  .fs-15 {
+      font-size: 1.25rem;
+  }
+  .text-justify {
+      text-align: justify;
+  }
+  .text-vio {
+    color: rgba(128, 0, 128, 0.884);
+  }
+
+
+
+  /*aca termina mi css de boostrap de html Nosotros */
 .seccionNos {
   background-image: url("../assets/iconos/istockphoto-929904308-170667a\ 2.png");
   background-repeat: no-repeat;
@@ -252,146 +322,153 @@ border-radius: 45% 45% 0% 0%;
   width: 100%;
   height: 31.25rem;
   display: grid;
-  grid-template-columns: repeat(9,1fr);
-  grid-template-rows: repeat(4,1fr);
-}
-
-.bodaSecDos div img {
-  width: 100%;
-  height: 100%;
-  border:  solid black;
-  border-radius: 0% 0% 45% 45%;
-}
-
-.bodaSecDos div {
-  grid-column:2/5 ;
-  grid-row: 1/5;
-  order: 2;
+  grid-template-columns:10% 40% 40% 10%;
+  grid-template-rows: repeat(2,1fr);
+  justify-content: center;
 }
 .bodaSecDos article {
-  width: 100%;
-  height: 100%;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  order :1;
   background-color: #f1e8cd;
-  grid-column:1/10;
-  grid-row:2/5 ;
-  order: 1;
   display: grid;
-  grid-template-columns: repeat(9,1fr);
-  grid-template-rows: repeat(6,1fr);
+  grid-template-columns:10% 40% 40% 10%;
+  grid-template-rows: repeat(2,1fr);
 }
 .bodaSecDos article p {
-  width: 100%;
-  height: 100%;
-  font-size: 1.5625rem;
-  text-align: center;
-  grid-column:6/9 ;
-  grid-row:3/5 ;
+  grid-column: 3/4;
+  grid-row: 2/3;
+text-align: center;
+padding-bottom: 1.25rem;
 }
-
 .bodaSecDos article h2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: center;
+  padding-top: 1.25rem;
+}
+.bodaSecDos div {
   width: 100%;
-  height: 100%;
-  font-size: 2.1875rem ;
-  padding: 5%;
-  grid-column: 7/9;
-  grid-row:1/2 ;
+  height: 31.25rem;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  order: 2;
+  display: flex;
+  justify-content: center;
+}
+.bodaSecDos div img {
+  width: 50%;
+  height: 80%;
+  border-radius: 0% 0% 45% 45% ;
+  box-shadow: 5px 5px rgba(128, 128, 128, 0.537);
+}
+.bodaSecDos div img:hover {
+  filter: contrast(2);
+}
+.bodaSecTres div img:hover {
+  filter: contrast(2);
+}
+.bodaSecCuatro div img:hover {
+  filter: contrast(2);
+}
+.bodaSecDos article p::first-letter {
+  font-size: 1.5625rem;
+}
+.bodaSecTres article p::first-letter {
+  font-size: 1.5625rem;
+}
+.bodaSecCuatro article p::first-letter {
+  font-size: 1.5625rem;
 }
 
 .bodaSecTres {
   width: 100%;
   height: 31.25rem;
   display: grid;
-  grid-template-columns: repeat(9,1fr);
-  grid-template-rows: repeat(4,1fr);
-}
-
-.bodaSecTres div img {
-  width: 100%;
-  height: 100%;
-  border:  solid black;
-  border-radius: 0% 0% 45% 45%;
-}
-
-.bodaSecTres div {
-  grid-column:6/9 ;
-  grid-row: 1/5;
-  order: 2;
+  grid-template-columns:10% 40% 40% 10%;
+  grid-template-rows: repeat(2,1fr);
+  justify-content: center;
 }
 .bodaSecTres article {
-  width: 100%;
-  height: 100%;
-  background-color: #F3D7CA;
-  grid-column:1/10;
-  grid-row:2/5 ;
-  order: 1;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  order :1;
+  background-color: #e7c0aecf;
   display: grid;
-  grid-template-columns: repeat(9,1fr);
-  grid-template-rows: repeat(6,1fr);
+  grid-template-columns:10% 40% 40% 10%;
+  grid-template-rows: repeat(2,1fr);
 }
 .bodaSecTres article p {
-  width: 100%;
-  height: 100%;
-  font-size: 1.5625rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+text-align: center;
+padding-bottom: 1.25rem;
+}
+.bodaSecTres article h2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
   text-align: center;
-  grid-column:2/5 ;
-  grid-row:3/6 ;
+  padding-top: 1.25rem;
+}
+.bodaSecTres div {
+  width: 100%;
+  height: 31.25rem;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  order: 2;
+  display: flex;
+  justify-content: center;
+}
+.bodaSecTres div img {
+  width: 50%;
+  height: 80%;
+  border-radius: 0% 0% 45% 45% ;
+  box-shadow: 5px 5px rgba(128, 128, 128, 0.537);
 }
 
-.bodaSecTres article h2 {
-  width: 100%;
-  height: 100%;
-  font-size: 2.1875rem ;
-  padding-top: 5%;
-  grid-column: 3/5;
-  grid-row:1/2 ;
-}
 .bodaSecCuatro {
   width: 100%;
   height: 31.25rem;
   display: grid;
-  grid-template-columns: repeat(9,1fr);
-  grid-template-rows: repeat(4,1fr);
-}
-
-.bodaSecCuatro div img {
-  width: 100%;
-  height: 100%;
-  border:  solid black;
-  border-radius: 0% 0% 45% 45%;
-}
-
-.bodaSecCuatro div {
-  grid-column:2/5 ;
-  grid-row: 1/5;
-  order: 2;
+  grid-template-columns:10% 40% 40% 10%;
+  grid-template-rows: repeat(2,1fr);
+  justify-content: center;
 }
 .bodaSecCuatro article {
-  width: 100%;
-  height: 100%;
-  background-color: #fdf9ec;
-  grid-column:1/10;
-  grid-row:2/5 ;
-  order: 1;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  order :1;
+  background-color: #f4efdd;
   display: grid;
-  grid-template-columns: repeat(9,1fr);
-  grid-template-rows: repeat(6,1fr);
+  grid-template-columns:10% 40% 40% 10%;
+  grid-template-rows: repeat(2,1fr);
 }
 .bodaSecCuatro article p {
-  width: 100%;
-  height: 100%;
-  font-size: 1.5625rem;
-  text-align: center;
-  grid-column:6/9 ;
-  grid-row:3/5 ;
+  grid-column: 3/4;
+  grid-row: 2/3;
+text-align: center;
+padding-bottom: 1.25rem;
 }
-
 .bodaSecCuatro article h2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: center;
+  padding-top: 1.25rem;
+}
+.bodaSecCuatro div {
   width: 100%;
-  height: 100%;
-  font-size: 2.1875rem ;
-  padding: 5%;
-  grid-column: 7/9;
-  grid-row:1/2 ;
+  height: 31.25rem;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  order: 2;
+  display: flex;
+  justify-content: center;
+}
+.bodaSecCuatro div img {
+  width: 50%;
+  height: 80%;
+  border-radius: 0% 0% 45% 45% ;
+  box-shadow: 5px 5px rgba(128, 128, 128, 0.537);
 }
 
 .carrusel{
@@ -444,17 +521,15 @@ padding-bottom: 3.125rem;
   width: 100%;
   height: 50rem;
   display: flex;
-}
-.contacto div {
-  width: 50%;
-  height: 800px;
+  justify-content: center;
+  align-items: center;
 }
 iframe {
-  width: 40%;
-  height: 40%;
+  width: 90%;
+  height: 45%;
 }
 .contactoPag {
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -468,28 +543,40 @@ iframe {
   grid-template-rows: repeat(8.1fr);
 }
 .contactoPag div p:first-child {
+  font-family: "Marko One", serif;
+  font-size: .9375rem;
+  display: flex;
+  align-items: end;
   grid-column:1/4 ;
   grid-row: 2/3;
 }
 .contactoPag div a:nth-child(2) {
+  font-family: "Marko One", serif;
+  font-size: .9375rem;
   grid-column: 2/3;
   grid-row: 4/5;
 }
 .contactoPag div a:nth-child(3) {
+  font-family: "Marko One", serif;
+  font-size: .9375rem;
   grid-column: 2/3;
   grid-row: 5/6;
 }
 .contactoPag div a:nth-child(4) {
+  font-family: "Marko One", serif;
+  font-size: .9375rem;
   grid-column: 2/3;
   grid-row: 6/7;
 }
-.contactoPag div a:last-child {
+.contactoPag div a:last-child{
+  font-family: "Marko One", serif;
+  font-size: .9375rem;
   grid-column: 2/3;
   grid-row: 7/8;
 }
 .contactoPag div a img {
   width: 10%;
-  padding-right: .0625rem;
+  padding-right: .375rem;
 }
 
 
@@ -504,6 +591,71 @@ iframe {
   justify-content: start;
   align-items: center;
 }
+.formulario {
+  width: 50%;
+  height: 37.5rem;
+  margin: 0% 6.25rem 0% 6.25rem ;
+  background-image: url(../assets/iconos/descargar.jpeg);
+  border-radius: 50% 50% 0% 0%;
+  box-shadow: .3125rem .3125rem rgba(128, 128, 128, 0.542);
+}
+
+.formulario form {
+  width: 100%;
+  height: 37.5rem;
+display: grid;
+gap: 5px;
+grid-template-columns: 25% 50% 25%;
+grid-template-rows: 25% repeat(3,1fr) 10% 20% 25%;
+}
+.formulario form :first-child {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.formulario form :nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.formulario form :nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.formulario form :nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.formulario form :nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.formulario form :last-child {
+  width: 20%;
+  height: 20%;
+  grid-column: 2/3;
+  grid-row: 7/8;
+  margin-left: 7.5rem;
+  margin-top: 3.125rem;
+}
+input {
+  border-radius: .625rem;
+}
+input:focus {
+  background-color: rgb(240, 199, 206);
+}
+button:hover {
+  background-color: rgb(186, 17, 127);
+  box-shadow: .125rem .125rem;
+}  
+button:active {
+  color: pink;
+}
+input::placeholder {
+  font-family: "Marko One", serif;
+  text-align: center;
+  padding: .625rem;
+  
+}
+
 
 /* aca termina la vista destop*/
 
@@ -533,28 +685,12 @@ font-size: 1.25rem;
 }
   .seccionDos p{
     font-size: 1.5625rem;
-    }
-  .model a img{
-    width: 100%;
-    height: 75%;
-    display: flex;
+}
+    
+  .seccionTres {
+    grid-template-columns: repeat(3,30%);
     justify-content: center;
-    align-items: center;
-  }
-  .model{
-    width: 20%;
-    height: 21.875rem;
-  }
-  .model a {
-    width: 100%;
-    height:100%;
-  }
-  .model a p {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-  }
+}
 
   .expNov p{
     font-size: .9375rem;
@@ -582,89 +718,14 @@ font-size: 1.25rem;
 .bodaSecUno {
   height: 31.25rem;
 }
-.bodaSecDos {
-  height: 31.25rem;
+.bodaSecDos div img {
+  width: 80%;
 }
-.bodaSecDos article p {
-  width: 100%;
-  height: 100%;
-  font-size: 1.5625rem;
-  line-height:  1.5625rem;
-  text-align: center;
-  grid-column:2/9 ;
-  grid-row:4/6 ;
+.bodaSecTres div img {
+  width: 80%;
 }
-
-.bodaSecDos article h2 {
-  width: 100%;
-  height: 100%;
-  font-size: 2.1875rem ;
-  padding: 5%;
-  grid-column: 7/9;
-  grid-row:2/3 ;
-}
-
-.bodaSecDos div {
-  height: 50%;
-  grid-column:2/5 ;
-  grid-row: 1/5;
-  order: 2;
-}
-.bodaSecTres {
-  height: 31.25rem;
-}
-.bodaSecTres article p {
-  width: 100%;
-  height: 100%;
-  font-size: 1.5625rem;
-  line-height:  1.5625rem;
-  text-align: center;
-  grid-column:2/9 ;
-  grid-row:4/6 ;
-}
-
-.bodaSecTres article h2 {
-  width: 100%;
-  height: 100%;
-  font-size: 2.1875rem ;
-  padding: 5%;
-  grid-column: 3/4;
-  grid-row:2/3 ;
-}
-
-.bodaSecTres div {
-  height: 50%;
-  grid-column:6/9 ;
-  grid-row: 1/5;
-  order: 2;
-}
-.bodaSecCuatro {
-  height: 31.25rem;
-}
-.bodaSecCuatro article p {
-  width: 100%;
-  height: 100%;
-  font-size: 1.5625rem;
-  line-height:  1.5625rem;
-  text-align: center;
-  grid-column:2/9 ;
-  grid-row:4/6 ;
-}
-
-.bodaSecCuatro article h2 {
-  width: 100%;
-  height: 100%;
-  font-size: 2.1875rem ;
-  padding: 5%;
-  grid-column: 7/9;
-  grid-row:2/3 ;
-}
-
-.bodaSecCuatro div {
-  height: 50%;
-  grid-column:2/5 ;
-  grid-row: 1/5;
-  order: 2;
+.bodaSecCuatro div img {
+  width: 80%;
 }
 
 .galeriaMain div {
@@ -716,24 +777,16 @@ font-size: 1.25rem;
   }
   .seccionTres {
     width: 100%;
+    height: 25rem;
+    grid-template-columns: repeat(3,30%);
+    align-items: center;
+}
+.seccionTres div {
     height: 18.75rem;
-  }
-  
-  .seccionTres div a img{
-    width:100%;
-    height: 9.375rem;
-    border: solid black;
-  border-radius: 45% 45% 0% 0%;
 }
-
-.seccionTres div{
-  width:25%;
-  height: 12.5rem;
-
-}
-.seccionTres div a p {
-  height:3.125rem;
-  font-size: .9375rem;
+.seccionTres div img {
+    width: 100%;
+    height: 50%;
 }
 .seccionCuatro{
   width: 100%;
@@ -796,20 +849,21 @@ footer a img {
 .bodaSecDos {
   height: 37.5rem;
 }
-.bodaSecDos div {
-  grid-column: 2/6;
-}
-.bodaSecTres div {
-  grid-column: 5/9;
+.bodaSecDos div img {
+  width: 100%;
 }
 .bodaSecTres {
   height: 37.5rem;
 }
+.bodaSecTres div img {
+  width: 100%;
+}
+
 .bodaSecCuatro {
   height: 37.5rem;
 }
-.bodaSecCuatro div {
-  grid-column: 2/6;
+.bodaSecCuatro div img {
+  width: 100%;
 }
 .galeriaMain {
   width: 100%;
@@ -852,6 +906,72 @@ footer a img {
   font-size: 1.5625rem;
   margin-bottom: 1.25rem;
 }
+.bodaSecDos {
+  height: 43.75rem;
+}
+.bodaSecDos div {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.bodaSecDos div img {
+  width: 100%;
+}
+.bodaSecDos article {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.bodaSecDos article p {
+padding:  20px;
+}
+.bodaSecDos article h2 {
+padding-bottom: 1.25rem;
+}  
+.bodaSecTres {
+  height: 43.75rem;
+}
+.bodaSecTres div {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.bodaSecTres div img {
+  width: 100%;
+}
+.bodaSecTres article {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.bodaSecTres article p {
+padding:  20px;
+}
+.bodaSecTres article h2 {
+padding-bottom: 1.25rem;
+}
+.bodaSecCuatro {
+  height: 43.75rem;
+}
+.bodaSecCuatro div {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.bodaSecCuatro div img {
+  width: 100%;
+}
+.bodaSecCuatro article {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.bodaSecCuatro article p {
+padding:  20px;
+}
+.bodaSecCuatro article h2 {
+padding-bottom: 1.25rem;
+}  
 }
 /*aca termina otra vista*/
 
@@ -872,6 +992,27 @@ footer a img {
     width: 90%;
     height: 90%;
   }
+  .seccionDos p {
+    font-size: 1.25rem;
+  }
+  .seccionTres {
+    width: 100%;
+    height: 62.5rem;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+}
+.seccionTres div {
+    height: 15.625rem;
+}
+.seccionTres div img {
+    width: 100%;
+    height: 50%;
+}
+.seccionTres div a {
+width: 50%;
+height: 100%;
+}
   .seccionNos div p{
     font-size: .9375rem;
     line-height: .9375rem;
@@ -907,62 +1048,10 @@ font-size: 1.5625rem;
   .seccionDos h1 {
     font-size: 1.875rem;
   }
-  
-  .seccionTres{
-  height: 50rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .seccionTres div a {
-    width: 100%;
-    height: 15.625rem;
-  }
-
-  .seccionTres div {
-    width: 50%;
-    height: 15.625rem;
-  }
-
-  .seccionTres div a img {
-    width:100%;
-    height: 12.5rem;
-  }
 
   .bodaSecUno p {
     font-size: 1.25rem;
   }
-  .bodaSecDos {
-    width: 100%;
-    height: 43.75rem;
-  }
-  .bodaSecDos div {
-    grid-column:3/8;
-  }
-  .bodaSecDos article h2 {
-    grid-column: 4/8;
-    grid-row: 3/4;
-  }
-  .bodaSecTres {
-    width: 100%;
-    height: 43.75rem;
-  }
-  .bodaSecTres div {
-    grid-column:3/8;
-  }
-  .bodaSecTres article h2 {
-    grid-column: 4/8;
-    grid-row: 3/4;
-  }
-  .bodaSecCuatro {
-    width: 100%;
-    height: 43.75rem;
-  }
-  .bodaSecCuatro div {
-    grid-column:3/8;
-  }
-  .bodaSecCuatro article h2 {
-    grid-column: 4/8;
-    grid-row: 3/4;
-  }
+  
+  
 }
