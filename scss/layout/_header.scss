@@ -1,0 +1,51 @@
+.barra nav{ 
+    font-size: 2.5rem;
+    text-decoration: none;
+    background-color: map-get($colores, 1 );
+    font-family: "Luxurious Script", cursive;
+    @include width-height(100%,4.375rem);
+    @include flex(row,space-evenly,center,none);
+        a {
+        text-shadow: 2px 2px 4px black;
+        text-decoration: none;
+        font-size: 1.875rem;
+        padding-left: .625rem;
+            &:hover {
+            font-size: 1.5625rem;
+            color:rgba(218, 29, 146, 0.847);
+            transition: .5s
+            }
+        }
+        ul {
+            @include width-height (100%,4.375rem);
+            @include flex (row,space-evenly,center,.9375rem);
+            list-style: none;
+            li{
+                a {
+                color: white;
+                text-decoration: none;
+                text-shadow: 2px 2px 4px black;
+                    &:hover {
+                    font-size: 1.5625rem;
+                    color:rgba(218, 29, 146, 0.847);
+                    transition: .5s;
+                    }
+                }
+            }
+        }
+.checkbox {
+    font-size: 1.875rem;
+    color: white;
+    float: right;
+    padding-left: 1.25rem;
+    display: none; 
+    cursor: pointer;
+        &:hover {
+            @include width-height (30%,30%);
+            color:map-get($colores,2 ) 
+        }
+}
+#check {
+    display: none;
+}
+}

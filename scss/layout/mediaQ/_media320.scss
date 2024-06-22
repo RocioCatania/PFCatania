@@ -1,0 +1,53 @@
+
+@media(max-width: 20rem){
+p {
+    font-family: "Luxurious Roman", serif;
+}
+.seccionUno {
+    .box {
+        @include width-height (100%,12.5rem);
+        p {
+            height: 10.9375rem;
+            font-size: 1rem;
+        }
+    }
+
+}
+
+.seccionDos {
+    height: 21.875rem;
+        p{
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 1.875rem;
+        }
+}
+.seccionTres {
+    height: 43.75rem;
+    padding-top: 1.25rem;
+}
+
+.seccionCuatro {
+    .anillos {
+            grid-column: 7/12;
+            grid-row: 1/8;
+            order: 2;
+}
+.expNov {
+    h2 {
+        padding-top: 1.25rem;
+    }
+    p {
+        grid-column: 2/10;
+    }
+}
+
+.bodaSecUno p {
+    font-size: 1.25rem;
+}  
+.checkbox {
+    height: 1.875rem;
+}
+}
+}

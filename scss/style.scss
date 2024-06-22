@@ -1,0 +1,36 @@
+
+
+/*primero utilities*/
+
+@import"./utilities/mixin";
+@import "./utilities/variables";
+@import"./utilities/funciones";
+@import"./utilities/mapas";
+
+/*archivos base*/
+
+@import "./base/reset";
+
+/*parsal de layout*/
+
+@import "./layout/header";
+@import"./layout/main_index";
+@import"./layout/main_nosotros";
+@import"./layout/main_bodas";
+@import "./layout/main_galeria";
+@import "./layout/main_contacto";
+@import "./layout/footer";
+
+/*parsal de componentes*/
+@import"./components/boostrap";
+
+
+/*parsal de media querys*/
+
+@import"./layout/mediaQ/media1024";
+@import"./layout/mediaQ/media768";
+@import"./layout/mediaQ/media425";
+@import"./layout/mediaQ/media375";
+@import"./layout/mediaQ/media320";
+
+

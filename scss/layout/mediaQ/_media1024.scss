@@ -1,0 +1,71 @@
+
+
+@media (max-width: 1024px) {
+
+.navBar {
+    @include width-height(100%,44.375rem);
+    @include flex (row, space-around, center, none);
+    padding-right: 3.125rem;
+        li {
+            a {
+                font-size: 1.25rem;
+            }
+        }
+}
+.barra nav a {
+    padding-left: 5%;
+}
+
+.seccionUno .box p {
+    font-size: 1.25rem;
+    padding: 1%;
+}
+.seccionDos p{
+    font-size: 1.5625rem;
+}
+.seccionTres {
+    grid-template-columns: repeat(3,30%);
+    justify-content: center;
+}
+.expNov {
+    p{
+        font-size: .9375rem;
+    }
+    h2 {
+        font-size: 1.25rem ;
+    }
+} 
+.textoMedio {
+    p {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        }
+        h1 {
+            font-size: 1.5625rem;
+            padding-top: 1.25rem;
+        }
+} 
+.seccionNos {
+    width: 100%;
+        div {
+            width: 75%;
+        }
+}
+.bodaSecUno {
+    height: 31.25rem;
+}
+.bodaSecDos div img {
+    width: 80%;
+}
+.bodaSecTres div img {
+    width: 80%;
+}
+.bodaSecCuatro div img {
+    width: 80%;
+}
+.custom-w-75 {
+    width: 75%;
+}
+}

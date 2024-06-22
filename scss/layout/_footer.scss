@@ -1,0 +1,13 @@
+footer {
+    background-color:map-get($colores, 2 );
+    @include width-height (100%,6.25rem);
+    @include flex (row,center,center,6.25rem);
+    a {
+        img {
+            &:hover {
+            filter: grayscale(3) ;
+            width: 50%;
+            }
+        }
+    }
+}

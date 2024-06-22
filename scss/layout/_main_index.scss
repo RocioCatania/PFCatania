@@ -1,0 +1,104 @@
+.seccionUno {
+    @include width-height (100%,31.25rem);
+    @include flex (row,center,center,none);
+    background-image: url("../assets/iconos/1500px.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+        .box {
+            @include width-height (40%,18.75rem);
+            @include flex (row,center,center,none);
+            font-size: .625rem;
+            background-color: #f3d7cabf;
+            border-top-left-radius: 15%;
+            border-top-right-radius: 15%;
+                p {
+                    @include width-height(100%,12.5rem);
+                    font-size: 1.25rem;
+                    text-align: center;
+                    padding: 1%;
+                }
+        }
+}
+
+.seccionDos {
+    @include width-height(100%,25rem);
+    padding: 5%;
+        p {
+            @include width-height(100%,18.75rem);
+            font-size: 1.5625rem;
+            text-align: center;
+                &::first-letter {
+                    font-size: 2.5rem;
+                }
+        }
+}
+
+.seccionTres {
+    @include width-height(100%,31.25rem);
+    background-color: #F3D7CA;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: center;
+    align-items: center;
+        div {
+            @include width-height(100%,25rem);
+            @include flex (row,center,none,none);
+                a {
+                    text-decoration: none;
+                }
+                img {
+                    @include width-height (100%,80%);
+                    border-radius: 31.25rem 31.25rem 0% 0%;
+                }
+                p {
+                    @include width-height (100%,6.25);
+                    @include flex (row,center,center,none);
+                    font-size: 1.25rem;
+                    color: black;
+                    background-color: map-get($colores, 1 );
+                }
+        }
+}
+
+.model:hover {
+filter:grayscale(3) ;
+    width: 80%;
+}
+.seccionCuatro {
+    @include width-height(100%,28.125rem);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+        .anillos {
+            grid-column: 8/11;
+            grid-row: 1/12;
+            order: 2;
+                img {
+                    @include width-height(100%,100%);
+                    border: solid black;
+                    border-radius: 0% 0% 40% 40%;
+                }
+        }
+} 
+.expNov {
+    @include width-height (100%,100%);
+    background-color: #E7C0AE;
+    font-size: 1.25rem;
+    grid-column: 1/13;
+    grid-row: 6/13;
+    order: 1;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,1fr);
+        h2{
+            @include width-height (100%,100%);
+            grid-column: 2/6;
+            grid-row: 2/3;
+        }
+        p {
+            @include width-height (100%,100%);
+            padding-left: 3.125rem;
+            grid-column: 1/6;
+            grid-row: 3/6;
+        }
+}

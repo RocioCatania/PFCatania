@@ -1,0 +1,37 @@
+
+@media (max-width: 375px) {
+
+
+.box {
+    width: 12.5rem;
+        p {
+            height: 9.375rem;
+            font-size: .1875rem;
+        }
+}
+
+.seccionDos p {
+    font-size: 1.25rem;
+}
+
+.seccionTres {
+    @include width-height(100%,62.5rem);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+        div {
+            height: 15.625rem;
+            img {
+                @include width-height (100%,50%);
+            }
+            a {
+                @include width-height (50%,100%);
+            }
+            p{
+                font-size: .9375rem;
+                line-height: .9375rem;
+                padding-top: .625rem;
+            }
+        }
+}
+}

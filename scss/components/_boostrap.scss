@@ -1,0 +1,63 @@
+/*html hecho con boostrap*/
+
+.font-open-sans {
+    background-image: url(../assets/iconos/pareja.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Luxurious Script", cursive;
+    }
+    .fs-25 {
+    font-size: 1.5625rem
+    }
+    .fs-40 {
+        font-size: 1.875rem;
+    }
+    .text-shadow {
+        text-shadow: 2px 2px 4px black;
+    }
+    .fs-lux {
+        font-family: "Dancing Script", cursive;
+    }
+    .rounded-5 {
+        background-color:map-get($colores , 1 ) ;
+        justify-content: e;
+    }
+    .bg-color {
+        background-color: #F3D7CA;
+    }
+    .no-bullets {
+        list-style: none;
+    }
+    .custom-height-70 {
+        height: 4.375rem;
+    }
+    .custom-height-700 {
+        height: 43.75rem;
+    }
+    .custom-height-500 {
+        height: 31.25rem;
+    }
+    .custom-gap-100 {
+        gap: 6.25rem;
+    }
+    .custom-height-100 {
+        height: 6.25rem;
+    }
+    .bg-cf {
+        background-color: map-get($colores, 2 );
+    }
+    .fs-15 {
+        font-size: 1.25rem;
+    }
+    .text-justify {
+        text-align: justify;
+    }
+    .text-vio {
+        color: rgba(128, 0, 128, 0.884);
+    }
+    .custom-w-50 {
+        width: 50%;
+        align-content: center;
+    }
+
