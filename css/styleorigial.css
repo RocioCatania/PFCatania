@@ -86,7 +86,7 @@ ul.navBar {
   padding-left: .625rem;
 } */
 
-.seccionUno {
+/* .seccionUno {
   width: 100%;
   height: 31.25rem;
   background-image: url("../assets/iconos/1500px.jpg");
@@ -125,57 +125,107 @@ ul.navBar {
   width: 100%;
   height: 400px;
   padding: 5%
+  
+  }
+  .seccionDos p {
+    width: 100%;
+    height: 18.75rem;
+    font-size: 1.5625rem;
+    text-align: center;
+    }
+    .seccionDos p::first-letter {
+      font-size: 2.5rem;
+      }
+      .seccionTres {
+        width: 100%;
+        height: 31.25rem;
+        background-color: #F3D7CA;
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        justify-content: center;
+        align-items: center;
+        }
 
-}
-.seccionDos p {
-  width: 100%;
-height: 18.75rem;
-font-size: 1.5625rem;
-text-align: center;
-}
-.seccionDos p::first-letter {
-  font-size: 2.5rem;
-}
-.seccionTres {
-  width: 100%;
-  height: 31.25rem;
-  background-color: #F3D7CA;
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  justify-content: center;
-  align-items: center;
-}
-
-.seccionTres div{
+        .seccionTres div{
   width: 100%;
   height: 25rem;
   display: flex;
   justify-content: center;
-}
-.seccionTres div a {
+  }
+  .seccionTres div a {
   text-decoration: none;
-}
-.seccionTres div img {
+  }
+  .seccionTres div img {
   border-radius: 31.25rem 31.25rem 0% 0%;
-}
-.seccionTres div p {
-  background-color: #e7bda9;
-  width: 100%;
-  height: 6.25rem;
-  color: black;
-  font-size: 1.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.model:hover {
-filter:grayscale(3) ;
-  width: 80%;
-}
+  }
+  .seccionTres div p {
+    background-color: #e7bda9;
+    width: 100%;
+    height: 6.25rem;
+    color: black;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .model:hover {
+      filter:grayscale(3) ;
+      width: 80%;
+      }
+
+      .seccionCuatro {
+        width: 100%;
+        height: 28.125rem;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(12,1fr);
+      }
+      .seccionCuatro .anillos img {
+        width: 100%;
+        height: 100%;
+        border: solid black;
+        border-radius: 0% 0% 40% 40%;
+      }
+      
+      .anillos {
+        grid-column: 8/11;
+        grid-row: 1/12;
+        order: 2;
+      }
+      
+      
+      
+      .expNov {
+        width: 100%;
+        height: 100%;
+        background-color: #E7C0AE;
+        font-size: 1.25rem;
+        grid-column: 1/13;
+        grid-row: 6/13;
+        order: 1;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(5,1fr);
+      }
+      
+      .expNov h2{
+        width: 100%;
+        height: 100%;
+        grid-column: 2/6;
+        grid-row: 2/3;
+      }
+      
+      .expNov p {
+        width:100%;
+        height: 100%;
+        padding-left: 3.125rem;
+        grid-column: 1/6;
+        grid-row: 3/6;
+      }
 
 /*html hecho con boostrap*/
 
-.font-open-sans {
+/* .font-open-sans {
   background-image: url(../assets/iconos/pareja.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -230,13 +280,14 @@ font-size: 1.5625rem
   .text-vio {
     color: rgba(128, 0, 128, 0.884);
   }
+  
+  
+  
+ */  /*aca termina mi css de boostrap de html Nosotros */
+/*  */
+/*   background-image: url("../assets/iconos/istockphoto-929904308-170667a\ 2.png");
 
-
-
-  /*aca termina mi css de boostrap de html Nosotros */
-.seccionNos {
-  background-image: url("../assets/iconos/istockphoto-929904308-170667a\ 2.png");
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 46.9375rem;
@@ -255,55 +306,6 @@ font-size: 1.5625rem
 }
 
 
-.seccionCuatro {
-  width: 100%;
-  height: 28.125rem;
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(12,1fr);
-}
-.seccionCuatro .anillos img {
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  border-radius: 0% 0% 40% 40%;
-}
-
-.anillos {
-  grid-column: 8/11;
-  grid-row: 1/12;
-  order: 2;
-}
-
-
-
-.expNov {
-  width: 100%;
-  height: 100%;
-  background-color: #E7C0AE;
-  font-size: 1.25rem;
-  grid-column: 1/13;
-  grid-row: 6/13;
-  order: 1;
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  grid-template-rows: repeat(5,1fr);
-}
-
-.expNov h2{
-  width: 100%;
-  height: 100%;
-  grid-column: 2/6;
-  grid-row: 2/3;
-}
-
-.expNov p {
-  width:100%;
-  height: 100%;
-  padding-left: 3.125rem;
-  grid-column: 1/6;
-  grid-row: 3/6;
-}
 
 .bodaSecUno {
   width: 100%;
@@ -466,43 +468,9 @@ padding-bottom: 1.25rem;
   box-shadow: 5px 5px rgba(128, 128, 128, 0.537);
 }
 
-.carrusel{
-  width: 100%;
-  height: 37.5rem;
-  background-color: rgba(128, 128, 128, 0.696);
+ */
 
-}
-.carrusel div{
-width: 100%;
-height: 37.5rem;
-padding-top: 3.125rem;
-padding-bottom: 3.125rem;
-
-}
-
-
-.galeriaMain div {
-  width: 40%;
-  height: 37.5rem;
-}
-.galeriaMain {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.carrusel {
-  margin-right: 4.6875rem;
-  margin-left: 4.6875rem;
-  display: flex;
-  justify-content: center;
-}
-.carrusel img {
-  width: 80%;
-  height: 37.5rem;
-  padding: 3.125rem 0rem 3.125rem 0rem;
-}
-
-.textoMedio p {
+/* .textoMedio p {
   font-size: 1.25rem;
   line-height: 1.25rem;
   padding-left: 2.5rem;
@@ -512,7 +480,7 @@ padding-bottom: 3.125rem;
 .textoMedio h1 {
   padding-top: 1.875rem;
 }
-.contacto {
+ *//* .contacto {
   width: 100%;
   height: 50rem;
   display: flex;
@@ -651,7 +619,7 @@ input::placeholder {
   
 }
 
-
+ */
 /* aca termina la vista destop*/
 
 

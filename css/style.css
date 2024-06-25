@@ -190,6 +190,71 @@ html {
     grid-column: 1/6;
     grid-row: 3/6; }
 
+.bodaSecUno {
+  width: 100%;
+  height: 25rem;
+  background-color: #E7C0AE;
+  font-size: 1.875rem;
+  text-align: center;
+  padding: 5%; }
+
+.bodaSecDos, .bodaSecTres, .bodaSecCuatro {
+  width: 100%;
+  height: 31.25rem;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center; }
+  .bodaSecDos article, .bodaSecTres article, .bodaSecCuatro article {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    order: 1;
+    background-color: #f1e8cd;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: repeat(2, 1fr); }
+    .bodaSecDos article p, .bodaSecTres article p, .bodaSecCuatro article p {
+      grid-column: 3/4;
+      grid-row: 2/3;
+      text-align: center;
+      padding-bottom: 1.25rem; }
+    .bodaSecDos article h2, .bodaSecTres article h2, .bodaSecCuatro article h2 {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      text-align: center;
+      padding-top: 1.25rem; }
+  .bodaSecDos div, .bodaSecTres div, .bodaSecCuatro div {
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    gap: none;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    order: 2; }
+    .bodaSecDos div img, .bodaSecTres div img, .bodaSecCuatro div img {
+      width: 50%;
+      height: 80%;
+      border-radius: 0% 0% 45% 45%;
+      box-shadow: 5px 5px rgba(128, 128, 128, 0.537); }
+      .bodaSecDos div img:hover, .bodaSecTres div img:hover, .bodaSecCuatro div img:hover {
+        filter: contrast(2); }
+
+.bodaSecTres article {
+  background-color: #e7c0aecf; }
+  .bodaSecTres article p {
+    grid-column: 2/3; }
+  .bodaSecTres article h2 {
+    grid-column: 2/3; }
+
+.bodaSecTres div {
+  grid-column: 3/4; }
+
+.bodaSecCuatro article {
+  background-color: #f4efdd; }
+
 h1 {
   font-size: 2.5rem;
   font-weight: 400px;
@@ -268,6 +333,144 @@ h1 {
     text-decoration: none;
     text-align: center;
     margin: 0 .625rem; }
+
+.contacto {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+  .contacto .formulario {
+    width: 50%;
+    height: 37.5rem;
+    margin: 0% 6.25rem 0% 6.25rem;
+    background-image: url(../assets/iconos/descargar.jpeg);
+    border-radius: 50% 50% 0% 0%;
+    box-shadow: 0.3125rem 0.3125rem rgba(128, 128, 128, 0.542); }
+    .contacto .formulario form {
+      width: 100%;
+      height: 37.5rem;
+      display: grid;
+      gap: 5px;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-rows: 25% repeat(3, 1fr) 10% 20% 25%; }
+      .contacto .formulario form:first-child {
+        grid-column: 0.66667;
+        grid-row: 0.66667; }
+      .contacto .formulario form:nth-child(3) {
+        grid-column: 0.66667;
+        grid-row: 0.75; }
+      .contacto .formulario form:nth-child(4) {
+        grid-column: 0.66667;
+        grid-row: 0.8; }
+      .contacto .formulario form:nth-child(2) {
+        grid-column: 0.66667;
+        grid-row: 0.83333; }
+      .contacto .formulario form:nth-child(5) {
+        grid-column: 0.66667;
+        grid-row: 0.85714; }
+      .contacto .formulario form:last-child {
+        grid-column: 0.66667;
+        grid-row: 0.875;
+        margin-left: 7.5rem;
+        margin-top: 3.125rem; }
+  .contacto .contactoPag {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: none; }
+    .contacto .contactoPag div {
+      width: 50%;
+      height: 25rem;
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: repeat(8.1fr); }
+      .contacto .contactoPag div p {
+        width: 100%;
+        height: 100%;
+        grid-column: 0.25;
+        grid-row: 0.5;
+        font-family: "Marko One", serif;
+        font-size: .9375rem; }
+      .contacto .contactoPag div a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: none;
+        text-decoration: none;
+        color: black;
+        font-size: 1.25rem;
+        font-family: "Dancing Script", cursive; }
+        .contacto .contactoPag div a img {
+          width: 10%;
+          padding-right: .375rem; }
+
+iframe {
+  width: 90%;
+  height: 45%; }
+
+/* &:nth-child(2) {
+    @include colum-row (2/3,3/4);
+    font-family: "Marko One", serif;
+    font-size: .9375rem;
+}
+&:nth-child(3) {
+@include colum-row (2/3,4/5);
+font-family: "Marko One", serif;
+font-size: .9375rem;
+}
+&:nth-child(4) {
+@include colum-row (2/3,5/6);
+font-family: "Marko One", serif;
+font-size: .9375rem;
+}
+&:last-child {
+@include colum-row (2/3,6/7);
+font-family: "Marko One", serif;
+font-size: .9375rem;
+}
+
+ */
+.contactoPag div a img {
+  width: 10%;
+  padding-right: .375rem; }
+
+.contactoPag div a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  justify-content: start;
+  align-items: center; }
+
+input {
+  border-radius: .625rem; }
+
+input:focus {
+  background-color: #f0c7ce; }
+
+button:hover {
+  background-color: #ba117f;
+  box-shadow: .125rem .125rem; }
+
+button:active {
+  color: pink; }
+
+input::placeholder {
+  font-family: "Marko One", serif;
+  text-align: center;
+  padding: .625rem; }
 
 footer {
   background-color: #FFF8E3;
@@ -385,7 +588,7 @@ footer {
       width: 75%; }
   .bodaSecUno {
     height: 31.25rem; }
-  .bodaSecDos div img {
+  .bodaSecDos div img, .bodaSecTres div img, .bodaSecCuatro div img {
     width: 80%; }
   .bodaSecTres div img {
     width: 80%; }
@@ -470,9 +673,9 @@ footer {
     padding-top: 1.25rem; }
   .bodaSecUno p {
     font-size: 1.5625rem; }
-  .bodaSecDos {
+  .bodaSecDos, .bodaSecTres, .bodaSecCuatro {
     height: 37.5rem; }
-    .bodaSecDos div img {
+    .bodaSecDos div img, .bodaSecTres div img, .bodaSecCuatro div img {
       width: 100%; }
   .bodaSecTres {
     height: 37.5rem; }
@@ -484,20 +687,20 @@ footer {
       width: 100%; } }
 
 @media (max-width: 425px) {
-  .bodaSecDos {
+  .bodaSecDos, .bodaSecTres, .bodaSecCuatro {
     height: 43.75rem; }
-    .bodaSecDos div {
+    .bodaSecDos div, .bodaSecTres div, .bodaSecCuatro div {
       grid-column: 2/4;
       grid-row: 1/3; }
-      .bodaSecDos div img {
+      .bodaSecDos div img, .bodaSecTres div img, .bodaSecCuatro div img {
         width: 100%; }
-    .bodaSecDos article {
+    .bodaSecDos article, .bodaSecTres article, .bodaSecCuatro article {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .bodaSecDos article p {
+      .bodaSecDos article p, .bodaSecTres article p, .bodaSecCuatro article p {
         padding: 20px; }
-      .bodaSecDos article h2 {
+      .bodaSecDos article h2, .bodaSecTres article h2, .bodaSecCuatro article h2 {
         padding-bottom: 1.25rem; }
   .bodaSecTres {
     height: 43.75rem; }
