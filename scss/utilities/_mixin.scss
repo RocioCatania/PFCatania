@@ -12,7 +12,7 @@
     width: $width;
     height: $height;
 }
-@mixin colum-row ($grid-column,$grid-row) {
-    grid-column: $grid-column;
-    grid-row: $grid-row;
+@mixin colum-row ($column,$row) {
+    grid-column: $column;
+    grid-row: $row;
 }

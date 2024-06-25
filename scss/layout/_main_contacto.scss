@@ -13,26 +13,54 @@
                     gap: 5px;
                     grid-template-columns: 25% 50% 25%;
                     grid-template-rows: 25% repeat(3,1fr) 10% 20% 25%;
+                    input {
+                        border-radius: .625rem;
+                        &:focus {
+                            background-color: rgb(240, 199, 206);
+                        }
+                        &::placeholder {
+                            font-family: "Marko One", serif;
+                            text-align: center;
+                            padding: .625rem;
+                        }
                         &:first-child {
-                            @include colum-row (2/3,2/3);
+                            grid-column: 2/3;
+                            grid-row: 2/3;
                         }
                         &:nth-child(3) {
-                            @include colum-row (2/3,3/4);
+                            grid-column: 2/3;
+                            grid-row: 4/5;
                         }
                         &:nth-child(4) {
-                            @include colum-row (2/3,4/5);
+                            grid-column: 2/3;
+                            grid-row: 5/6;
                         }
                         &:nth-child(2) {
-                            @include colum-row (2/3,5/6);
+                            grid-column: 2/3;
+                            grid-row: 3/4;
                         }
                         &:nth-child(5) {
-                            @include colum-row (2/3,6/7);
+                            grid-column: 2/3;
+                            grid-row: 6/7;
                         }
-                        &:last-child {
-                            @include colum-row (2/3,7/8);
-                            margin-left: 7.5rem;
-                            margin-top: 3.125rem;
-                        }
+                    }
+                    div {
+                        @include flex (row,center,center,none);
+                        grid-column: 2/3;
+                        grid-row: 7/8;
+                            button {
+                                @include width-height (50%,25%);
+                                border-radius: 1.25rem;
+                                background-color: beige;
+                                    &:hover {
+                                        background-color: rgb(186, 17, 127);
+                                        box-shadow: .125rem .125rem;
+                                    }
+                                    &:active {
+                                        background-color: pink;
+                                    }
+                            }
+                    }
                 }
             }
         .contactoPag {
@@ -45,9 +73,11 @@
                     grid-template-rows: repeat(8.1fr);
                         p {
                             @include width-height (100%,100%);
-                            @include colum-row (1/4,1/2);
+                            grid-column: 1/4;
+                            grid-row: 1/2;
                             font-family: "Marko One", serif;
                             font-size: .9375rem;
+                            padding-top: 3.125rem;
                         }
                         a {
                             @include width-height (100%,100%);
@@ -55,79 +85,40 @@
                             text-decoration: none;
                             color: black;
                             font-size: 1.25rem;
-                            font-family: "Dancing Script", cursive; ;
-                                img {
-                                width: 10%;
-                                padding-right: .375rem;
-                            }
+                            font-family: "Dancing Script", cursive; 
+                                &:nth-child(2) {
+                                    grid-column: 2/3;
+                                    grid-row: 2/3;
+                                    font-family: "Marko One", serif;
+                                    font-size: .9375rem;
+                                }
+                                &:nth-child(3) {
+                                    grid-column: 2/3;
+                                    grid-row: 3/4;
+                                    font-family: "Marko One", serif;
+                                    font-size: .9375rem;
+                                }
+                                &:nth-child(4) {
+                                    grid-column: 2/3;
+                                    grid-row: 4/5;
+                                    font-family: "Marko One", serif;
+                                    font-size: .9375rem;
+                                }
+                                &:last-child {
+                                    grid-column: 2/3;
+                                    grid-row: 5/6;
+                                    font-family: "Marko One", serif;
+                                    font-size: .9375rem;
+                                }
                         }
+                        img {
+                            width: 10%;
+                            padding-right: .375rem; 
+                        } 
                 }
         }
 }
 
 iframe {
-    @include width-height (90%,45%);
+    @include width-height (90%,40%);
 }
-/* &:nth-child(2) {
-    @include colum-row (2/3,3/4);
-    font-family: "Marko One", serif;
-    font-size: .9375rem;
-}
-&:nth-child(3) {
-@include colum-row (2/3,4/5);
-font-family: "Marko One", serif;
-font-size: .9375rem;
-}
-&:nth-child(4) {
-@include colum-row (2/3,5/6);
-font-family: "Marko One", serif;
-font-size: .9375rem;
-}
-&:last-child {
-@include colum-row (2/3,6/7);
-font-family: "Marko One", serif;
-font-size: .9375rem;
-}
-
- */
-
- .contactoPag div a img {
-    width: 10%;
-    padding-right: .375rem;
-  }
-  
-  
-  .contactoPag div a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: black;
-    font-size: 1.25rem;
-    font-family: "Dancing Script", cursive; ;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-
-
-  input {
-    border-radius: .625rem;
-  }
-  input:focus {
-    background-color: rgb(240, 199, 206);
-  }
-  button:hover {
-    background-color: rgb(186, 17, 127);
-    box-shadow: .125rem .125rem;
-  }  
-  button:active {
-    color: pink;
-  }
-  input::placeholder {
-    font-family: "Marko One", serif;
-    text-align: center;
-    padding: .625rem;
-    
-  }
-  
-  

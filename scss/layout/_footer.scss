@@ -6,6 +6,7 @@ footer {
         img {
             &:hover {
             filter: grayscale(3) ;
+            transition: .2s;
             width: 50%;
             }
         }
