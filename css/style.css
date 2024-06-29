@@ -185,8 +185,8 @@ html {
 
 .mainNosotros {
   width: 100%;
-  height: 100%;
-  background-image: url(/assets/iconos/pareja.png);
+  height: 50rem;
+  background-image: url(../assets/iconos/pareja.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
