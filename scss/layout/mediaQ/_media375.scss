@@ -2,13 +2,16 @@
 @media (max-width: 375px) {
 
 
-.box {
-    width: 12.5rem;
-        p {
-            height: 9.375rem;
-            font-size: .1875rem;
+    .seccionUno {
+        .box {
+            @include width-height (100%,12.5rem);
+            p {
+                height: 10.9375rem;
+                font-size: 1rem;
+            }
         }
-}
+    
+    }
 
 .seccionDos p {
     font-size: 1.25rem;

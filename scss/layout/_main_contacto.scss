@@ -1,4 +1,5 @@
 .contacto {
+    background-image: linear-gradient(to bottom, #f3d7ca, #f8dedd, #f7e7ec, #f6f1f6, #fafafa);
     @include width-height(100%,50rem);
     @include flex (row,center,center,none);
         .formulario {
@@ -117,8 +118,10 @@
                         } 
                 }
         }
+        div {
+            iframe {
+                @include width-height (90%,40%);
+            }
+        }
 }
 
-iframe {
-    @include width-height (90%,40%);
-}

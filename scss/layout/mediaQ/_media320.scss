@@ -23,31 +23,27 @@ p {
             font-size: 1.875rem;
         }
 }
-.seccionTres {
-    height: 43.75rem;
-    padding-top: 1.25rem;
-}
 
+.seccionTres {
+    @include width-height (100%,100%);
+    @include flex (column,center,center,1.25rem);
+    padding-bottom: 1.5625rem;
+}
 .seccionCuatro {
-    .anillos {
+    @include width-height (100%,100%);
+        .anillos {
             grid-column: 7/12;
             grid-row: 1/8;
-            order: 2;
-}
-.expNov {
-    h2 {
-        padding-top: 1.25rem;
-    }
-    p {
-        grid-column: 2/10;
-    }
-}
-
-.bodaSecUno p {
-    font-size: 1.25rem;
-}  
-.checkbox {
-    height: 1.875rem;
-}
-}
+        }
+        .expNov {
+            @include width-height (100%,100%);
+            h2{
+                padding-top: 1.25rem;
+            }
+            p {
+                grid-column: 1/10;
+                padding-top: .3125rem;
+                }
+        }
+} 
 }

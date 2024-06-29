@@ -16,7 +16,7 @@ font-family: "Marko One", serif;
 font-family: "Dancing Script", cursive;
 */
 html {
-  font-family: "Dancing Script", cursive; }
+  font-family: "Luxurious Roman", serif; }
 
 /*parsal de layout*/
 .barra nav {
@@ -30,7 +30,9 @@ html {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  gap: none; }
+  gap: none;
+  z-index: 1050;
+  position: fixed; }
   .barra nav a {
     text-shadow: 2px 2px 4px black;
     text-decoration: none;
@@ -65,8 +67,6 @@ html {
     display: none;
     cursor: pointer; }
     .barra nav .checkbox:hover {
-      width: 30%;
-      height: 30%;
       color: #FFF8E3; }
   .barra nav #check {
     display: none; }
@@ -118,39 +118,31 @@ html {
   height: 31.25rem;
   background-color: #F3D7CA;
   display: grid;
-  grid-template-columns: repeat(3, 25%);
-  justify-content: center;
-  align-items: center; }
-  .seccionTres div {
-    width: 100%;
-    height: 25rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: none;
-    gap: none; }
-    .seccionTres div a {
-      text-decoration: none; }
-    .seccionTres div img {
-      width: 100%;
-      height: 80%;
-      border-radius: 31.25rem 31.25rem 0% 0%; }
-    .seccionTres div p {
-      width: 100%;
-      height: 6.25;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: none;
-      font-size: 1.25rem;
-      color: black;
-      background-color: #F3D7CA; }
-
-.model:hover {
-  filter: grayscale(3);
-  transition: 3s;
-  width: 80%; }
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto; }
+  .seccionTres div.model {
+    width: 75%;
+    height: 80%;
+    margin-top: 1.25rem;
+    margin-left: 1.5625rem; }
+    .seccionTres div.model:hover {
+      filter: grayscale(3);
+      transition: 3s;
+      width: 80%; }
+    .seccionTres div.model a {
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: black; }
+      .seccionTres div.model a img {
+        width: 100%;
+        height: 80%;
+        border-radius: 40% 40% 0% 0%; }
+      .seccionTres div.model a p {
+        width: 100%;
+        height: 3.125rem;
+        background-color: #FFF8E3; }
 
 .seccionCuatro {
   width: 100%;
@@ -167,34 +159,67 @@ html {
       height: 100%;
       border: solid black;
       border-radius: 0% 0% 40% 40%; }
+  .seccionCuatro .expNov {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #fff8e3, #fff5ec, #fff6f6, #fef8fc, #fafafa);
+    font-size: 1.25rem;
+    grid-column: 1/13;
+    grid-row: 6/13;
+    order: 1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    .seccionCuatro .expNov h2 {
+      width: 100%;
+      height: 100%;
+      padding-top: 1.25rem;
+      grid-column: 2/6;
+      grid-row: 2/3; }
+    .seccionCuatro .expNov p {
+      width: 100%;
+      height: 100%;
+      padding-left: 3.125rem;
+      grid-column: 1/6;
+      grid-row: 3/6; }
 
-.expNov {
+.mainNosotros {
   width: 100%;
   height: 100%;
-  background-color: #E7C0AE;
-  font-size: 1.25rem;
-  grid-column: 1/13;
-  grid-row: 6/13;
-  order: 1;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(5, 1fr); }
-  .expNov h2 {
+  background-image: url(/assets/iconos/pareja.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .mainNosotros section {
     width: 100%;
     height: 100%;
-    grid-column: 2/6;
-    grid-row: 2/3; }
-  .expNov p {
-    width: 100%;
-    height: 100%;
-    padding-left: 3.125rem;
-    grid-column: 1/6;
-    grid-row: 3/6; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: none; }
+    .mainNosotros section div {
+      width: 60%;
+      height: 90%;
+      background-color: #f3d7cac8;
+      border-radius: 0% 0% 20% 20%;
+      padding: 0 1.25rem;
+      margin-top: 5rem; }
+    .mainNosotros section h1 {
+      font-size: 1.5625rem;
+      color: grey; }
+    .mainNosotros section p {
+      width: 100%;
+      height: 75%;
+      color: grey;
+      line-height: 1.875rem;
+      text-align: justify;
+      margin-bottom: 3.125rem; }
 
 .bodaSecUno {
   width: 100%;
   height: 25rem;
-  background-color: #E7C0AE;
+  background-image: linear-gradient(to bottom, #f3d7ca, #f8dedd, #f7e7ec, #f6f1f6, #fafafa);
   font-size: 1.875rem;
   text-align: center;
   padding: 5%; }
@@ -337,6 +362,7 @@ h1 {
     margin: 0 .625rem; }
 
 .contacto {
+  background-image: linear-gradient(to bottom, #f3d7ca, #f8dedd, #f7e7ec, #f6f1f6, #fafafa);
   width: 100%;
   height: 50rem;
   display: flex;
@@ -456,10 +482,9 @@ h1 {
       .contacto .contactoPag div img {
         width: 10%;
         padding-right: .375rem; }
-
-iframe {
-  width: 90%;
-  height: 40%; }
+  .contacto div iframe {
+    width: 90%;
+    height: 40%; }
 
 footer {
   background-color: #FFF8E3;
@@ -585,37 +610,74 @@ footer {
   .bodaSecCuatro div img {
     width: 80%; }
   .custom-w-75 {
-    width: 75%; } }
+    width: 75%; }
+  .divNosotros {
+    width: 70%;
+    height: 90%; }
+  .contacto .formulario {
+    width: 75%;
+    height: 80%;
+    margin-top: 3.125rem; }
+  .contacto .contactoPag {
+    width: 75%;
+    height: 100%; }
+    .contacto .contactoPag div {
+      grid-template-columns: 30% 70% 30%; } }
 
 @media (max-width: 768px) {
-  nav {
-    width: 100%;
-    height: 44.375rem;
+  .barra nav a {
+    width: 50%; }
+  .barra nav .checkbox {
+    width: 50%;
+    height: 1.875rem;
+    display: block;
+    text-align: right;
+    padding-right: 3.125rem; }
+  .barra nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: none;
     align-items: center;
-    gap: none;
-    background-color: #F3D7CA; }
-    nav ul {
-      width: 100%;
-      height: 44.375rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: none;
-      align-items: none;
-      gap: 11.25rem; }
-      nav ul li a {
-        font-size: 1.125rem; }
+    gap: 1.25rem;
+    width: 30%;
+    height: 15.625rem;
+    text-align: center;
+    position: fixed;
+    background-color: #F3D7CA;
+    top: 4.375rem;
+    transition: all .5s;
+    margin-left: 70%;
+    right: 100%; }
+    .barra nav ul li {
+      display: block;
+      padding: 0;
+      line-height: 1.875rem; }
+      .barra nav ul li a {
+        font-size: 35px; }
+        .barra nav ul li a:hover {
+          font-size: 1.875rem;
+          background-color: #FFF8E3;
+          border-radius: 20%; }
+  #check:checked ~ .navBar {
+    left: 0;
+    z-index: 1050; }
+  #check {
+    display: none; }
   .seccionUno {
     width: 100%;
-    height: 21.875rem; }
+    height: 25rem; }
     .seccionUno .box {
-      height: 18.75rem; }
+      width: 75%;
+      height: 50%;
+      margin-top: 6.25rem;
+      padding-top: 3.125rem; }
       .seccionUno .box p {
         height: 15.625rem;
-        font-size: 1.25rem;
-        text-align: center; }
+        font-size: 1.125rem;
+        text-align: center;
+        padding-top: 1.5625rem; }
+  .seccionDos p {
+    font-size: 1.125rem; }
   .seccionTres {
     width: 100%;
     height: 18.75rem;
@@ -634,18 +696,21 @@ footer {
   .seccionCuatro {
     width: 100%;
     height: 18.75rem; }
-  .anillos {
-    height: 12.5rem1;
-    grid-column: 8/12;
-    grid-row: 1/10; }
-  .expNov {
-    height: 12.5rem; }
-    .expNov p {
-      font-size: .625rem; }
-    .expNov h2 {
-      font-size: .9375rem;
-      grid-column: 2/5;
-      grid-row: 1/3; }
+    .seccionCuatro .anillos {
+      height: 12.5rem;
+      grid-column: 8/12;
+      grid-row: 1/12; }
+    .seccionCuatro .expNov {
+      height: 12.5rem; }
+      .seccionCuatro .expNov h2 {
+        font-size: .9375rem;
+        padding-top: 1.5625rem;
+        grid-column: 2/5;
+        grid-row: 1/3; }
+      .seccionCuatro .expNov p {
+        font-size: 1rem;
+        grid-column: 1/10;
+        padding-top: 1.5625rem; }
   footer {
     height: 3.125rem;
     gap: 3.125rem; }
@@ -661,6 +726,8 @@ footer {
   .textoMedio h1 {
     font-size: 1.25rem;
     padding-top: 1.25rem; }
+  .bodaSecUno h1 {
+    margin-top: 1.5625rem; }
   .bodaSecUno p {
     font-size: 1.5625rem; }
   .bodaSecDos, .bodaSecTres, .bodaSecCuatro {
@@ -674,9 +741,100 @@ footer {
   .bodaSecCuatro {
     height: 37.5rem; }
     .bodaSecCuatro div img {
-      width: 100%; } }
+      width: 100%; }
+  .mainNosotros {
+    width: 100%;
+    height: 100vh; }
+    .mainNosotros .divNosotros {
+      width: 75%;
+      height: 80%;
+      font-size: .875rem;
+      background-color: #fafafa18;
+      padding: 0 .625rem; }
+      .mainNosotros .divNosotros h1 {
+        color: black; }
+      .mainNosotros .divNosotros p {
+        color: black; }
+  .contacto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+    .contacto .formulario {
+      width: 75%;
+      height: 31.25rem;
+      margin-top: 6.25rem; }
+      .contacto .formulario form {
+        width: 100%;
+        height: 100%; }
+    .contacto .contactoPag {
+      width: 75%;
+      height: 50rem;
+      margin-bottom: 6.25rem; } }
 
 @media (max-width: 425px) {
+  .barra nav a {
+    width: 50%; }
+  .barra nav .checkbox {
+    width: 50%;
+    height: 1.875rem;
+    display: block;
+    text-align: right;
+    padding-right: 3.125rem; }
+  .barra nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: 1.25rem;
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    position: fixed;
+    background-color: #F3D7CA;
+    top: 4.375rem;
+    transition: all .5s;
+    margin-left: 50%;
+    right: 100%; }
+    .barra nav ul li {
+      display: block;
+      padding: 0;
+      line-height: 1.875rem; }
+      .barra nav ul li a {
+        font-size: 1.5625rem; }
+        .barra nav ul li a:hover {
+          font-size: 1.875rem;
+          background-color: #FFF8E3;
+          border-radius: 20%; }
+  #check:checked ~ .navBar {
+    left: 0;
+    z-index: 1050; }
+  #check {
+    display: none; }
+  .seccionUno .box {
+    width: 100%;
+    height: 12.5rem; }
+    .seccionUno .box p {
+      height: 10.9375rem;
+      font-size: 1rem;
+      padding-top: 0; }
+  .seccionTres {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding-bottom: 1.5625rem; }
+  .bodaSecUno {
+    height: 37.5rem;
+    padding-top: 5rem; }
+    .bodaSecUno h1 {
+      font-size: 1.875rem;
+      margin-bottom: 1.25rem; }
+    .bodaSecUno p {
+      font-size: 1.25rem; }
   .bodaSecDos, .bodaSecTres, .bodaSecCuatro {
     height: 43.75rem; }
     .bodaSecDos div, .bodaSecTres div, .bodaSecCuatro div {
@@ -726,60 +884,43 @@ footer {
         padding: 20px; }
       .bodaSecCuatro article h2 {
         padding-bottom: 1.25rem; }
-  .checkbox {
-    display: block;
-    padding-left: 6.25rem; }
-  .barra nav a {
-    width: 50%; }
-  .barra nav .checkbox {
-    width: 50%;
-    height: 1.875rem;
-    display: block;
-    text-align: right;
-    padding-right: 3.125rem; }
-  .barra nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: center;
-    gap: 1.25rem;
-    width: 50%;
-    height: 250px;
-    text-align: center;
-    position: fixed;
-    background-color: #F3D7CA;
-    top: 4.375rem;
-    transition: all .5s;
-    margin-left: 50%;
-    right: 100%; }
-    .barra nav ul li {
-      display: block;
-      padding: 0;
-      line-height: 1.875rem; }
-      .barra nav ul li a {
-        font-size: 1.5625rem; }
-        .barra nav ul li a:hover {
-          font-size: 1.875rem;
-          background-color: #FFF8E3;
-          border-radius: 20%; }
-  #check:checked ~ .navBar {
-    left: 0;
-    z-index: 1050; }
-  #check:checked ~ .checkbox {
-    width: 50%;
-    height: 1.875rem;
-    display: block;
-    text-align: right;
-    padding-right: 3.125rem; }
-  #check {
-    display: none; } }
+  .seccionCuatro {
+    width: 100%;
+    height: 100%; }
+    .seccionCuatro .anillos {
+      grid-column: 7/12;
+      grid-row: 1/8; }
+    .seccionCuatro .expNov {
+      width: 100%;
+      height: 100%; }
+      .seccionCuatro .expNov h2 {
+        padding-top: 1.25rem; }
+      .seccionCuatro .expNov p {
+        margin-top: 0;
+        padding-bottom: 1.25rem;
+        font-size: 1rem;
+        grid-column: 1/10; }
+  .mainNosotros {
+    width: 100%;
+    height: 100%; }
+    .mainNosotros .divNosotros {
+      background-color: #fafafa04; }
+      .mainNosotros .divNosotros h1 {
+        color: black;
+        margin-bottom: 1.5625rem; }
+      .mainNosotros .divNosotros p {
+        color: black; }
+  .contacto .contactoPag div {
+    width: 100%;
+    height: 100%; } }
 
 @media (max-width: 375px) {
-  .box {
-    width: 12.5rem; }
-    .box p {
-      height: 9.375rem;
-      font-size: .1875rem; }
+  .seccionUno .box {
+    width: 100%;
+    height: 12.5rem; }
+    .seccionUno .box p {
+      height: 10.9375rem;
+      font-size: 1rem; }
   .seccionDos p {
     font-size: 1.25rem; }
   .seccionTres {
@@ -817,17 +958,25 @@ footer {
     .seccionDos h1 {
       font-size: 1.875rem; }
   .seccionTres {
-    height: 43.75rem;
-    padding-top: 1.25rem; }
-  .seccionCuatro .anillos {
-    grid-column: 7/12;
-    grid-row: 1/8;
-    order: 2; }
-  .seccionCuatro .expNov h2 {
-    padding-top: 1.25rem; }
-  .seccionCuatro .expNov p {
-    grid-column: 2/10; }
-  .seccionCuatro .bodaSecUno p {
-    font-size: 1.25rem; }
-  .seccionCuatro .checkbox {
-    height: 1.875rem; } }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding-bottom: 1.5625rem; }
+  .seccionCuatro {
+    width: 100%;
+    height: 100%; }
+    .seccionCuatro .anillos {
+      grid-column: 7/12;
+      grid-row: 1/8; }
+    .seccionCuatro .expNov {
+      width: 100%;
+      height: 100%; }
+      .seccionCuatro .expNov h2 {
+        padding-top: 1.25rem; }
+      .seccionCuatro .expNov p {
+        grid-column: 1/10;
+        padding-top: .3125rem; } }

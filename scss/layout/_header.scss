@@ -5,6 +5,8 @@
     font-family: "Luxurious Script", cursive;
     @include width-height(100%,4.375rem);
     @include flex(row,space-evenly,center,none);
+    z-index: 1050;
+    position: fixed;
         a {
         text-shadow: 2px 2px 4px black;
         text-decoration: none;
@@ -12,8 +14,8 @@
         padding-left: .625rem;
             &:hover {
             font-size: 1.5625rem;
-            color:rgba(218, 29, 146, 0.847);
-            transition: .5s
+            color: $color-hover;
+            transition: .5s;
             }
         }
         ul {
@@ -27,7 +29,7 @@
                 text-shadow: 2px 2px 4px black;
                     &:hover {
                     font-size: 1.5625rem;
-                    color:rgba(218, 29, 146, 0.847);
+                    color:$color-hover;
                     transition: .5s;
                     }
                 }
@@ -41,7 +43,6 @@
     display: none; 
     cursor: pointer;
         &:hover {
-            @include width-height (30%,30%);
             color:map-get($colores,2 ) 
         }
 }

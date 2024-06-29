@@ -34,37 +34,37 @@
 }
 
 .seccionTres {
-    @include width-height(100%,31.25rem);
-    background-color: #F3D7CA;
+    @include width-height (100%,31.25rem);
+    background-color: map-get($colores,1 );
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    justify-content: center;
-    align-items: center;
-        div {
-            @include width-height(100%,25rem);
-            @include flex (row,center,none,none);
-                a {
-                    text-decoration: none;
-                }
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+        div.model {
+            @include width-height (75%,80%);
+            margin-top: 1.25rem;
+            margin-left: 1.5625rem;
+            &:hover {
+            filter:grayscale(3) ;
+            transition: 3s;
+                width: 80%;
+            }
+            a {
+                @include width-height (25%,100%);
+                text-align: center;
+                text-decoration: none;
+                color: black;
                 img {
                     @include width-height (100%,80%);
-                    border-radius: 31.25rem 31.25rem 0% 0%;
+                    border-radius: 40% 40% 0% 0%;
                 }
                 p {
-                    @include width-height (100%,6.25);
-                    @include flex (row,center,center,none);
-                    font-size: 1.25rem;
-                    color: black;
-                    background-color: map-get($colores, 1 );
+                    @include width-height (100%,3.125rem);
+                    background-color: map-get($colores, $key:2 );
+                }
                 }
         }
 }
 
-.model:hover {
-filter:grayscale(3) ;
-transition: 3s;
-    width: 80%;
-}
 .seccionCuatro {
     @include width-height(100%,28.125rem);
     display: grid;
@@ -80,26 +80,27 @@ transition: 3s;
                     border-radius: 0% 0% 40% 40%;
                 }
         }
+        .expNov {
+            @include width-height (100%,100%);
+            background-image: linear-gradient(to top, #fff8e3, #fff5ec, #fff6f6, #fef8fc, #fafafa);            font-size: 1.25rem;
+            grid-column: 1/13;
+            grid-row: 6/13;
+            order: 1;
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(5,1fr);
+                h2{
+                    @include width-height (100%,100%);
+                    padding-top: 1.25rem;
+                    grid-column: 2/6;
+                    grid-row: 2/3;
+                }
+                p {
+                    @include width-height (100%,100%);
+                    padding-left: 3.125rem;
+                    grid-column: 1/6;
+                    grid-row: 3/6;
+                }
+        }
 } 
-.expNov {
-    @include width-height (100%,100%);
-    background-color: #E7C0AE;
-    font-size: 1.25rem;
-    grid-column: 1/13;
-    grid-row: 6/13;
-    order: 1;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(5,1fr);
-        h2{
-            @include width-height (100%,100%);
-            grid-column: 2/6;
-            grid-row: 2/3;
-        }
-        p {
-            @include width-height (100%,100%);
-            padding-left: 3.125rem;
-            grid-column: 1/6;
-            grid-row: 3/6;
-        }
-}
+

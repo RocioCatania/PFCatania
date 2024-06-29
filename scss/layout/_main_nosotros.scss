@@ -1,0 +1,29 @@
+.mainNosotros {
+    @include width-height (100%,100%);
+    background-image:url(/assets/iconos/pareja.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        section {
+            @include width-height (100%,100%);
+            @include flex (row,center,start,none);
+                div {
+                    @include width-height(60%,90%);
+                    background-color:map-get($colores, 3 ) ;
+                    border-radius: 0% 0% 20% 20%;
+                    padding: 0 1.25rem;
+                    margin-top: 5rem;
+                }
+                        h1 {
+                            font-size: 1.5625rem;
+                            color: grey;
+                        }
+                        p {
+                            @include width-height (100%,75%);
+                            color: grey;
+                            line-height: 1.875rem;
+                            text-align: justify;
+                            margin-bottom: 3.125rem;
+                        }
+                }
+            }

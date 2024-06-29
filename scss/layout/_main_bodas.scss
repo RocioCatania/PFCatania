@@ -1,7 +1,6 @@
 .bodaSecUno {
     @include width-height (100%,25rem);
-    background-color: #E7C0AE;
-    font-size: 1.875rem;
+    background-image: linear-gradient(to bottom, #f3d7ca, #f8dedd, #f7e7ec, #f6f1f6, #fafafa);    font-size: 1.875rem;
     text-align: center;
     padding: 5%;
 }
