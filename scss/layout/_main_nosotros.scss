@@ -1,11 +1,15 @@
 .mainNosotros {
         section {
-            /* @include width-height (100%,100%); */
             @include flex (row,center,start,none);
             @include width-height (100%,100%);
             background-image: linear-gradient(to right top, #d16ba5, #df7da1, #e992a1, #eea7a6, #f1bcb2, #f3c8ba, #f5d4c3, #f7dfcf, #f9e5d3, #fbebd8, #fdf2dd, #fff8e3);            background-repeat: no-repeat;
+            background-image: url(../assets/iconos/pareja.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
                 div {
-                    @include width-height(60%,90%);
+                    @include width-height(60%,100%);
                     background-color:map-get($colores, 3 ) ;
                     border-radius: 0% 0% 20% 20%;
                     padding: 0 1.25rem;
@@ -16,7 +20,7 @@
                             color: grey;
                         }
                         p {
-                            @include width-height (100%,75%);
+                            @include width-height (100%,100%);
                             color: grey;
                             line-height: 1.875rem;
                             text-align: justify;

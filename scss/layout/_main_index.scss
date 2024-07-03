@@ -34,15 +34,15 @@
 }
 
 .seccionTres {
-    @include width-height (100%,31.25rem);
+    @include width-height (100%, 37.5rem);
     background-color: map-get($colores,1 );
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: auto;
         div.model {
-            @include width-height (75%,80%);
+            @include width-height (100%,80%);
             margin-top: 1.25rem;
-            margin-left: 1.5625rem;
+            padding: 3.125rem;
             &:hover {
             filter:grayscale(3) ;
             transition: 3s;
@@ -91,7 +91,6 @@
             grid-template-rows: repeat(5,1fr);
                 h2{
                     @include width-height (100%,100%);
-                    padding-top: 1.25rem;
                     grid-column: 2/6;
                     grid-row: 2/3;
                 }

@@ -18,11 +18,12 @@
 }
 
 .seccionTres {
-    @include width-height(100%,62.5rem);
+    @include width-height(100%,none);
     grid-template-columns: 100%;
     grid-template-rows: repeat(3,1fr);
     align-items: center;
         div {
+            width: 100%;
             height: 15.625rem;
             img {
                 @include width-height (100%,50%);
@@ -36,5 +37,10 @@
                 padding-top: .625rem;
             }
         }
+}
+.bodaSecUno {
+    p {
+        font-size: 1.125rem;
+    }
 }
 }
