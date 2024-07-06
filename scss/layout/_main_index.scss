@@ -1,9 +1,10 @@
 .seccionUno {
-    @include width-height (100%,31.25rem);
+    @include width-height (100%,37.5rem);
     @include flex (row,center,center,none);
     background-image: url("../assets/iconos/1500px.webp");
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 6.25rem;
         .box {
             @include width-height (60%,18.75rem);
             @include flex (row,center,center,none);

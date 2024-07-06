@@ -3,7 +3,7 @@
     text-decoration: none;
     background-color: map-get($colores, 1 );
     font-family: "Luxurious Script", cursive;
-    @include width-height(100%,4.375rem);
+    @include width-height(100%,5.625rem);
     @include flex(row,space-evenly,center,none);
     z-index: 1050;
     position: fixed;
@@ -16,6 +16,11 @@
             font-size: 1.5625rem;
             color: $color-hover;
             transition: .5s;
+            }
+            img {
+                @include width-height (30%,30%);
+                padding-top: .625rem;
+                padding-left: 1.25rem;
             }
         }
         ul {

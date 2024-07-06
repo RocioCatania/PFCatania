@@ -191,10 +191,11 @@ font-size: 1.375rem;
     display: flex;
     flex-direction: column;
     .formulario { 
-        @include width-height (75%,31.25rem);
+        @include width-height (90%,37.5rem);
         margin-top: 6.25rem;
         form {
             @include width-height (100%,100%);
+            
         }
     }
     .contactoPag {

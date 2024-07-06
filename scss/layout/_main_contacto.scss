@@ -14,15 +14,28 @@
                 gap: 5px;
                 grid-template-columns: 25% 50% 25%;
                 grid-template-rows: 25% repeat(3,1fr) 10% 20% 25%;
-                    input {
-                        border-radius: .625rem;
+                .input__email {
+                    width: 100%;
+                    padding: 12px 18px;
+                    font-size: 16px;
+                    font-family: inherit;
+                    box-shadow: 0 0 0 1px #f8bfbf;
+                    border: none;
+                    border-radius: 25px;
+                    background-color: #fff5f5;
+                    transition: all .3s;
                         &:focus {
-                            background-color: rgb(240, 199, 206);
+                            outline: none;
+                            box-shadow: 0 0 10px 1px #ee8c8c;
+                            border: none;
+                            transition: all .3s;
                         }
                         &::placeholder {
                             font-family: "Marko One", serif;
                             text-align: center;
                             padding: .625rem;
+                            color: #ce9797;
+                            font-size: .875rem;
                         }
                         &:first-child {
                             grid-column: 2/3;
@@ -45,6 +58,8 @@
                             grid-row: 6/7;
                         }
                     }
+                }
+            }
                     div {
                         @include flex (row,center,center,none);
                         grid-column: 2/3;
@@ -115,10 +130,6 @@
                                                 filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
                                             }
                                 }
-
-
-
-
 @keyframes wind {
     0% {
     background-position: 0% 50%;
@@ -131,72 +142,63 @@
     }
 }
 @keyframes slay-1 {
-  0% {
+0% {
     transform: rotate(10deg);
-  }
-
-  50% {
+}
+50% {
     transform: rotate(-5deg);
-  }
-
-  100% {
+}
+100% {
     transform: rotate(10deg);
-  }
+}
 }
 @keyframes slay-2 {
-  0% {
+0% {
     transform: rotate(0deg);
-  }
-
-  50% {
+}
+50% {
     transform: rotate(15deg);
-  }
-
-  100% {
+}
+100% {
     transform: rotate(0);
-  }
+}
 }
 @keyframes slay-3 {
-  0% {
+0% {
     transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(0);
-  }
 }
-
+50% {
+    transform: rotate(-5deg);
+}
+100% {
+    transform: rotate(0);
+}
+}
                     }
-                }
-            }
-        .contactoPag {
-            padding-top: 4.375rem;
-            @include width-height (50%,100%);
-            @include flex (column,none,center,none);
-                div {
-                    @include width-height (50%,25rem);
-                    display: grid;
-                    grid-template-columns: 20% 60% 20%;
-                    grid-template-rows: repeat(8.1fr);
-                        p {
-                            @include width-height (100%,100%);
-                            grid-column: 1/4;
-                            grid-row: 1/2;
-                            font-family: "Marko One", serif;
-                            font-size: .9375rem;
-                            padding-top: 3.125rem;
-                        }
-                        a {
-                            @include width-height (100%,100%);
-                            @include flex (row,start,center,none);
-                            text-decoration: none;
-                            color: black;
-                            font-size: 1.25rem;
-                            font-family: "Dancing Script", cursive; 
+                    .contactoPag {
+                        padding-top: 4.375rem;
+                        @include width-height (50%,100%);
+                        @include flex (column,none,center,none);
+                        div {
+                            @include width-height (50%,25rem);
+                            display: grid;
+                            grid-template-columns: 20% 60% 20%;
+                            grid-template-rows: repeat(8.1fr);
+                            p {
+                                @include width-height (100%,100%);
+                                grid-column: 1/4;
+                                grid-row: 1/2;
+                                font-family: "Marko One", serif;
+                                font-size: .9375rem;
+                                padding-top: 3.125rem;
+                            }
+                            a {
+                                @include width-height (100%,100%);
+                                @include flex (row,start,center,none);
+                                text-decoration: none;
+                                color: black;
+                                font-size: 1.25rem;
+                                font-family: "Dancing Script", cursive; 
                                 &:nth-child(2) {
                                     grid-column: 2/3;
                                     grid-row: 2/3;
@@ -221,17 +223,18 @@
                                     font-family: "Marko One", serif;
                                     font-size: .9375rem;
                                 }
+                            }
+                            img {
+                                width: 10%;
+                                padding-right: .375rem; 
+                            } 
                         }
-                        img {
-                            width: 10%;
-                            padding-right: .375rem; 
-                        } 
+                    }
                 }
-        }
-        div {
+                    div {
             iframe {
                 @include width-height (90%,40%);
             }
         }
-}
+
 
