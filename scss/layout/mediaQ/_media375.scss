@@ -13,9 +13,12 @@
     
     }
 
-.seccionDos p {
-    font-size: 1.25rem;
-}
+.seccionDos {
+    height: 100%;
+    p {
+        font-size: 1.25rem;
+    }
+} 
 
 .seccionTres {
     @include width-height(100%,none);
@@ -41,6 +44,18 @@
 .bodaSecUno {
     p {
         font-size: 1.125rem;
+    }
+}
+.bodaSecDos {
+    div {
+        img {
+            height: 75%;
+        }
+    }
+    article {
+        h2 {
+            padding-top: 1.25rem
+        }
     }
 }
 }

@@ -73,10 +73,11 @@
     @include width-height (100%,100%);
     grid-template-columns: repeat(3,30%);
     justify-content: center;
-        div {
-            @include width-height (75%,100%);
+        div.model {
+            @include width-height (100%,none);
+            padding: 1.25rem;
                 a {
-                    @include width-height (50%,100%);
+                    @include width-height (100%,100%);
                 }
                 img {
                     @include width-height (100%,100%);
@@ -85,14 +86,15 @@
 }
 
 .seccionCuatro {
-    @include width-height (100%,18.75rem);
+    @include width-height (100%,100%);
     .anillos {
+        width: 9.375rem;
         height: 12.5rem;
         grid-column: 8/12;
         grid-row: 1/12;
     }
     .expNov {
-        height: 18.75rem;
+        height: 100%;
         h2{
             font-size: .9375rem;
             padding-top: 1.5625rem;
@@ -103,6 +105,8 @@
             font-size: 1rem ;
             grid-column: 1/10;
             padding-top: 1.5625rem;
+            display: inline;
+            padding-bottom: 1.25rem;
             }
     }
 } 
@@ -137,15 +141,22 @@ font-size: 1.375rem;
 }
 }
 .bodaSecDos {
-    height: 37.5rem;
         div {
             img {
                 width: 100%;
         } 
     }
+    article {
+        h2 {
+            text-align: none;
+        }
+        p {
+            grid-column: 2/4;
+            padding-top: 1.25rem;
+        }
+    }
 }
 .bodaSecTres {
-    height: 37.5rem;
         div {
             img {
                 width: 100%;
@@ -153,7 +164,6 @@ font-size: 1.375rem;
     }
 }
 .bodaSecCuatro {
-    height: 37.5rem;
         div {
             img {
                 width: 100%;

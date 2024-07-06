@@ -5,15 +5,15 @@
         .formulario {
             @include width-height (50%,37.5rem);
             margin: 0% 6.25rem 0% 6.25rem ;
-            background-image: url(../assets/iconos/descargar.jpeg);
             border-radius: 50% 50% 0% 0%;
             box-shadow: .3125rem .3125rem rgba(128, 128, 128, 0.542);
-                form {
-                    @include width-height (100%,37.5rem);   
-                    display: grid;
-                    gap: 5px;
-                    grid-template-columns: 25% 50% 25%;
-                    grid-template-rows: 25% repeat(3,1fr) 10% 20% 25%;
+            background-image: url(../assets/iconos/Romantic-Valentine-iPhone-Wallpapers.webp);
+            form {
+                @include width-height (100%,37.5rem);   
+                display: grid;
+                gap: 5px;
+                grid-template-columns: 25% 50% 25%;
+                grid-template-rows: 25% repeat(3,1fr) 10% 20% 25%;
                     input {
                         border-radius: .625rem;
                         &:focus {
@@ -49,18 +49,127 @@
                         @include flex (row,center,center,none);
                         grid-column: 2/3;
                         grid-row: 7/8;
-                            button {
-                                @include width-height (50%,25%);
-                                border-radius: 1.25rem;
-                                background-color: beige;
-                                    &:hover {
-                                        background-color: rgb(186, 17, 127);
-                                        box-shadow: .125rem .125rem;
-                                    }
-                                    &:active {
-                                        background-color: pink;
-                                    }
-                            }
+                                button {
+                                    position: relative;
+                                    padding: 15px 45px;
+                                    background: #fec195;
+                                    font-size: 17px;
+                                    font-weight: 500;
+                                    color: #181818;
+                                    cursor: pointer;
+                                    border: 1px solid #fec195;
+                                    border-radius: 8px;
+                                    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+                                        &:hover {
+                                            border: 1px solid #f3b182;
+                                            background: linear-gradient(
+                                            85deg,
+                                            #fec195,
+                                            #fcc196,
+                                            #fabd92,
+                                            #fac097,
+                                            #fac39c
+                                            );
+                                            animation: wind 2s ease-in-out infinite;
+                                        }
+                                        &:hover .icon-1 {
+                                            animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+                                            transform: rotate(10deg);
+                                        }
+                                        &:hover .icon-2 {
+                                            animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+                                            transform: rotate(0);
+                                        }
+                                        &:hover .icon-3 {
+                                        animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+                                        transform: rotate(0);
+                                        }
+                                            .icon-1 {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 25px;
+                                                transform-origin: 0 0;
+                                                transform: rotate(10deg);
+                                                transition: all 0.5s ease-in-out;
+                                                filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+                                            }
+                                            .icon-2 {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 25px;
+                                                width: 12px;
+                                                transform-origin: 50% 0;
+                                                transform: rotate(10deg);
+                                                transition: all 1s ease-in-out;
+                                                filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+                                            }
+                                            .icon-3 {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 18px;
+                                                transform-origin: 50% 0;
+                                                transform: rotate(-5deg);
+                                                transition: all 1s ease-in-out;
+                                                filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+                                            }
+                                }
+
+
+
+
+@keyframes wind {
+    0% {
+    background-position: 0% 50%;
+    }
+    0% {
+    background-position: 50% 100%;
+    }
+    0% {
+    background-position: 0% 50%;
+    }
+}
+@keyframes slay-1 {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes slay-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes slay-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
                     }
                 }
             }

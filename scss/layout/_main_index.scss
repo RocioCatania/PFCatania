@@ -1,11 +1,11 @@
 .seccionUno {
     @include width-height (100%,31.25rem);
     @include flex (row,center,center,none);
-    background-image: url("../assets/iconos/1500px.jpg");
+    background-image: url("../assets/iconos/1500px.webp");
     background-repeat: no-repeat;
     background-position: center;
         .box {
-            @include width-height (40%,18.75rem);
+            @include width-height (60%,18.75rem);
             @include flex (row,center,center,none);
             font-size: .625rem;
             background-color: #f3d7cabf;
@@ -35,7 +35,9 @@
 
 .seccionTres {
     @include width-height (100%, 37.5rem);
-    background-color: map-get($colores,1 );
+    background-image: linear-gradient(135deg, #F3D7CA, #FFD1C0, #FFC9BD, #FFBEC3);
+    background-size: 500%;
+    animation: fanimado 3s infinite;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: auto;
@@ -60,13 +62,25 @@
                 p {
                     @include width-height (100%,3.125rem);
                     background-color: map-get($colores, $key:2 );
+                    padding-top: .625rem;
                 }
                 }
         }
 }
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
 
 .seccionCuatro {
-    @include width-height(100%,28.125rem);
+    @include width-height(100%,100%);
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
