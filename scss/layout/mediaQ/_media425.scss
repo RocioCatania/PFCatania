@@ -5,16 +5,15 @@
             nav {
                 a {
                     width: 50%;
-                     img {
-                        @include width-height (50%,50%);
-                     }
+                        img {
+                            @include width-height (50%,50%);
+                        }
                 }
                 .checkbox {
                     @include width-height(50%,1.875rem);
                     display: block;
                     text-align: right;
-/*                     padding-right: 1.5625rem;
- */                    }
+                }
                 ul {
                     @include flex ( column,none,center,1.25rem);
                     @include width-height(50%,250px);

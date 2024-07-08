@@ -304,7 +304,7 @@ h1 {
   padding: 1.25rem 0; }
 
 .mainGaleria {
-  padding-top: 5rem; }
+  padding-top: 6.25rem; }
   .mainGaleria section .linea {
     background: #ffd6dd;
     width: 100%;
@@ -333,7 +333,7 @@ h1 {
         object-fit: cover;
         transition: transform 0.5s; }
   .mainGaleria .galeriaPlaya {
-    padding-top: 3.125rem;
+    padding-top: 6.25rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -367,7 +367,8 @@ h1 {
       height: 1.875rem;
       text-align: center;
       line-height: 1.875rem;
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin-top: 1.5625rem; }
     .mainGaleria .galeriaPlaya .siguiente {
       display: block;
       background: #fdc9d1;
@@ -827,9 +828,7 @@ footer {
     width: 50%;
     height: 1.875rem;
     display: block;
-    text-align: right;
-    /*                     padding-right: 1.5625rem;
- */ }
+    text-align: right; }
   .barra nav ul {
     display: flex;
     flex-direction: column;
@@ -938,6 +937,9 @@ footer {
     height: 50%; } }
 
 @media (max-width: 375px) {
+  .barra nav a img {
+    width: 70%;
+    height: 70%; }
   .seccionUno .box {
     width: 100%;
     height: 12.5rem; }
@@ -977,6 +979,9 @@ footer {
 @media (max-width: 20rem) {
   p {
     font-family: "Luxurious Roman", serif; }
+  .barra nav a img {
+    width: 70%;
+    height: 70%; }
   .seccionUno .box {
     width: 100%;
     height: 12.5rem; }

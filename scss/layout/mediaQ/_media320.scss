@@ -3,6 +3,17 @@
 p {
     font-family: "Luxurious Roman", serif;
 }
+
+.barra {
+    nav {
+        a {
+            img {
+                    @include width-height (70%,70%);
+                }
+        }
+    }
+}
+
 .seccionUno {
     .box {
         @include width-height (100%,12.5rem);
